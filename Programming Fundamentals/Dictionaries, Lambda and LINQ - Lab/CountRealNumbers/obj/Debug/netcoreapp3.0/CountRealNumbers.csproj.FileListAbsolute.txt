@@ -1,0 +1,11 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\bin\Debug\netcoreapp3.0\CountRealNumbers.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\obj\Debug\netcoreapp3.0\CountRealNumbers.csprojAssemblyReference.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\obj\Debug\netcoreapp3.0\CountRealNumbers.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\obj\Debug\netcoreapp3.0\CountRealNumbers.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\bin\Debug\netcoreapp3.0\CountRealNumbers.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\bin\Debug\netcoreapp3.0\CountRealNumbers.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\bin\Debug\netcoreapp3.0\CountRealNumbers.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\bin\Debug\netcoreapp3.0\CountRealNumbers.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\bin\Debug\netcoreapp3.0\CountRealNumbers.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\obj\Debug\netcoreapp3.0\CountRealNumbers.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\CountRealNumbers\obj\Debug\netcoreapp3.0\CountRealNumbers.pdb

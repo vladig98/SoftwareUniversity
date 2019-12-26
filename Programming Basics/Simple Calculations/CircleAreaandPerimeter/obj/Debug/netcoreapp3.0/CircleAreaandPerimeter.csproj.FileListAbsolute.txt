@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\bin\Debug\netcoreapp3.0\CircleAreaandPerimeter.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\bin\Debug\netcoreapp3.0\CircleAreaandPerimeter.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\bin\Debug\netcoreapp3.0\CircleAreaandPerimeter.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\bin\Debug\netcoreapp3.0\CircleAreaandPerimeter.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\bin\Debug\netcoreapp3.0\CircleAreaandPerimeter.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\bin\Debug\netcoreapp3.0\CircleAreaandPerimeter.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\obj\Debug\netcoreapp3.0\CircleAreaandPerimeter.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\obj\Debug\netcoreapp3.0\CircleAreaandPerimeter.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\obj\Debug\netcoreapp3.0\CircleAreaandPerimeter.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\CircleAreaandPerimeter\obj\Debug\netcoreapp3.0\CircleAreaandPerimeter.pdb

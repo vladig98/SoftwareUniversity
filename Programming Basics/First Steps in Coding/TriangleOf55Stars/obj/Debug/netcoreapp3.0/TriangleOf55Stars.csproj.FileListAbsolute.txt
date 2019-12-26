@@ -1,0 +1,11 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\bin\Debug\netcoreapp3.0\TriangleOf55Stars.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\bin\Debug\netcoreapp3.0\TriangleOf55Stars.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\bin\Debug\netcoreapp3.0\TriangleOf55Stars.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\bin\Debug\netcoreapp3.0\TriangleOf55Stars.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\bin\Debug\netcoreapp3.0\TriangleOf55Stars.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\bin\Debug\netcoreapp3.0\TriangleOf55Stars.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\obj\Debug\netcoreapp3.0\TriangleOf55Stars.csprojAssemblyReference.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\obj\Debug\netcoreapp3.0\TriangleOf55Stars.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\obj\Debug\netcoreapp3.0\TriangleOf55Stars.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\obj\Debug\netcoreapp3.0\TriangleOf55Stars.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleOf55Stars\obj\Debug\netcoreapp3.0\TriangleOf55Stars.pdb

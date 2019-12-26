@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\bin\Debug\netcoreapp3.0\FibonacciNumbers.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\bin\Debug\netcoreapp3.0\FibonacciNumbers.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\bin\Debug\netcoreapp3.0\FibonacciNumbers.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\bin\Debug\netcoreapp3.0\FibonacciNumbers.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\bin\Debug\netcoreapp3.0\FibonacciNumbers.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\bin\Debug\netcoreapp3.0\FibonacciNumbers.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\obj\Debug\netcoreapp3.0\FibonacciNumbers.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\obj\Debug\netcoreapp3.0\FibonacciNumbers.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\obj\Debug\netcoreapp3.0\FibonacciNumbers.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\FibonacciNumbers\obj\Debug\netcoreapp3.0\FibonacciNumbers.pdb

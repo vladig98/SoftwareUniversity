@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\bin\Debug\netcoreapp3.0\TriangleofDollars.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\bin\Debug\netcoreapp3.0\TriangleofDollars.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\bin\Debug\netcoreapp3.0\TriangleofDollars.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\bin\Debug\netcoreapp3.0\TriangleofDollars.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\bin\Debug\netcoreapp3.0\TriangleofDollars.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\bin\Debug\netcoreapp3.0\TriangleofDollars.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\obj\Debug\netcoreapp3.0\TriangleofDollars.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\obj\Debug\netcoreapp3.0\TriangleofDollars.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\obj\Debug\netcoreapp3.0\TriangleofDollars.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\TriangleofDollars\obj\Debug\netcoreapp3.0\TriangleofDollars.pdb

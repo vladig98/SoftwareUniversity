@@ -1,0 +1,11 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\bin\Debug\netcoreapp3.0\PersonalTitles.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\bin\Debug\netcoreapp3.0\PersonalTitles.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\bin\Debug\netcoreapp3.0\PersonalTitles.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\bin\Debug\netcoreapp3.0\PersonalTitles.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\bin\Debug\netcoreapp3.0\PersonalTitles.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\bin\Debug\netcoreapp3.0\PersonalTitles.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\obj\Debug\netcoreapp3.0\PersonalTitles.csprojAssemblyReference.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\obj\Debug\netcoreapp3.0\PersonalTitles.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\obj\Debug\netcoreapp3.0\PersonalTitles.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\obj\Debug\netcoreapp3.0\PersonalTitles.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\PersonalTitles\obj\Debug\netcoreapp3.0\PersonalTitles.pdb

@@ -1,0 +1,2 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\MetricConverter\obj\Debug\netcoreapp3.0\MetricConverter.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\MetricConverter\obj\Debug\netcoreapp3.0\MetricConverter.AssemblyInfo.cs

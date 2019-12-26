@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\bin\Debug\netcoreapp3.0\NumberTable.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\bin\Debug\netcoreapp3.0\NumberTable.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\bin\Debug\netcoreapp3.0\NumberTable.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\bin\Debug\netcoreapp3.0\NumberTable.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\bin\Debug\netcoreapp3.0\NumberTable.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\bin\Debug\netcoreapp3.0\NumberTable.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\obj\Debug\netcoreapp3.0\NumberTable.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\obj\Debug\netcoreapp3.0\NumberTable.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\obj\Debug\netcoreapp3.0\NumberTable.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\NumberTable\obj\Debug\netcoreapp3.0\NumberTable.pdb

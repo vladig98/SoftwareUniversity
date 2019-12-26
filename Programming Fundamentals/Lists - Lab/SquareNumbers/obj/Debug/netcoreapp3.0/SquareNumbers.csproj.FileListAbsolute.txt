@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\bin\Debug\netcoreapp3.0\SquareNumbers.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\bin\Debug\netcoreapp3.0\SquareNumbers.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\bin\Debug\netcoreapp3.0\SquareNumbers.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\bin\Debug\netcoreapp3.0\SquareNumbers.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\bin\Debug\netcoreapp3.0\SquareNumbers.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\bin\Debug\netcoreapp3.0\SquareNumbers.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\obj\Debug\netcoreapp3.0\SquareNumbers.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\obj\Debug\netcoreapp3.0\SquareNumbers.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\obj\Debug\netcoreapp3.0\SquareNumbers.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\SquareNumbers\obj\Debug\netcoreapp3.0\SquareNumbers.pdb

@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\bin\Debug\netcoreapp3.0\SieveofEratosthenes.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\bin\Debug\netcoreapp3.0\SieveofEratosthenes.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\bin\Debug\netcoreapp3.0\SieveofEratosthenes.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\bin\Debug\netcoreapp3.0\SieveofEratosthenes.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\bin\Debug\netcoreapp3.0\SieveofEratosthenes.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\bin\Debug\netcoreapp3.0\SieveofEratosthenes.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\obj\Debug\netcoreapp3.0\SieveofEratosthenes.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\obj\Debug\netcoreapp3.0\SieveofEratosthenes.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\obj\Debug\netcoreapp3.0\SieveofEratosthenes.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\SieveofEratosthenes\obj\Debug\netcoreapp3.0\SieveofEratosthenes.pdb

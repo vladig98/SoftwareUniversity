@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\bin\Debug\netcoreapp3.0\BombNumbers.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\bin\Debug\netcoreapp3.0\BombNumbers.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\bin\Debug\netcoreapp3.0\BombNumbers.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\bin\Debug\netcoreapp3.0\BombNumbers.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\bin\Debug\netcoreapp3.0\BombNumbers.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\bin\Debug\netcoreapp3.0\BombNumbers.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\obj\Debug\netcoreapp3.0\BombNumbers.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\obj\Debug\netcoreapp3.0\BombNumbers.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\obj\Debug\netcoreapp3.0\BombNumbers.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\BombNumbers\obj\Debug\netcoreapp3.0\BombNumbers.pdb

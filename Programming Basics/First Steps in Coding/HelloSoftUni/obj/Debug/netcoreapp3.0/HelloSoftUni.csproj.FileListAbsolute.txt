@@ -1,0 +1,11 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\bin\Debug\netcoreapp3.0\HelloSoftUni.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\bin\Debug\netcoreapp3.0\HelloSoftUni.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\bin\Debug\netcoreapp3.0\HelloSoftUni.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\bin\Debug\netcoreapp3.0\HelloSoftUni.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\bin\Debug\netcoreapp3.0\HelloSoftUni.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\bin\Debug\netcoreapp3.0\HelloSoftUni.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\obj\Debug\netcoreapp3.0\HelloSoftUni.csprojAssemblyReference.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\obj\Debug\netcoreapp3.0\HelloSoftUni.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\obj\Debug\netcoreapp3.0\HelloSoftUni.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\obj\Debug\netcoreapp3.0\HelloSoftUni.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\HelloSoftUni\obj\Debug\netcoreapp3.0\HelloSoftUni.pdb

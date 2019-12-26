@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\bin\Debug\netcoreapp3.0\USDtoBGN.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\bin\Debug\netcoreapp3.0\USDtoBGN.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\bin\Debug\netcoreapp3.0\USDtoBGN.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\bin\Debug\netcoreapp3.0\USDtoBGN.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\bin\Debug\netcoreapp3.0\USDtoBGN.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\bin\Debug\netcoreapp3.0\USDtoBGN.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\obj\Debug\netcoreapp3.0\USDtoBGN.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\obj\Debug\netcoreapp3.0\USDtoBGN.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\obj\Debug\netcoreapp3.0\USDtoBGN.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\USDtoBGN\obj\Debug\netcoreapp3.0\USDtoBGN.pdb

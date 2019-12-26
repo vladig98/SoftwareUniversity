@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\bin\Debug\netcoreapp3.0\StringConcatenation.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\bin\Debug\netcoreapp3.0\StringConcatenation.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\bin\Debug\netcoreapp3.0\StringConcatenation.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\bin\Debug\netcoreapp3.0\StringConcatenation.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\bin\Debug\netcoreapp3.0\StringConcatenation.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\bin\Debug\netcoreapp3.0\StringConcatenation.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\obj\Debug\netcoreapp3.0\StringConcatenation.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\obj\Debug\netcoreapp3.0\StringConcatenation.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\obj\Debug\netcoreapp3.0\StringConcatenation.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\StringConcatenation\obj\Debug\netcoreapp3.0\StringConcatenation.pdb

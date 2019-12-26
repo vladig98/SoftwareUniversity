@@ -1,0 +1,11 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\bin\Debug\netcoreapp3.0\FoldandSum.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\bin\Debug\netcoreapp3.0\FoldandSum.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\bin\Debug\netcoreapp3.0\FoldandSum.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\bin\Debug\netcoreapp3.0\FoldandSum.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\bin\Debug\netcoreapp3.0\FoldandSum.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\bin\Debug\netcoreapp3.0\FoldandSum.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\obj\Debug\netcoreapp3.0\FoldandSum.csprojAssemblyReference.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\obj\Debug\netcoreapp3.0\FoldandSum.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\obj\Debug\netcoreapp3.0\FoldandSum.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\obj\Debug\netcoreapp3.0\FoldandSum.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\FoldandSum\obj\Debug\netcoreapp3.0\FoldandSum.pdb

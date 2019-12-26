@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\bin\Debug\netcoreapp3.0\RadianstoDegrees.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\bin\Debug\netcoreapp3.0\RadianstoDegrees.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\bin\Debug\netcoreapp3.0\RadianstoDegrees.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\bin\Debug\netcoreapp3.0\RadianstoDegrees.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\bin\Debug\netcoreapp3.0\RadianstoDegrees.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\bin\Debug\netcoreapp3.0\RadianstoDegrees.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\obj\Debug\netcoreapp3.0\RadianstoDegrees.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\obj\Debug\netcoreapp3.0\RadianstoDegrees.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\obj\Debug\netcoreapp3.0\RadianstoDegrees.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\RadianstoDegrees\obj\Debug\netcoreapp3.0\RadianstoDegrees.pdb

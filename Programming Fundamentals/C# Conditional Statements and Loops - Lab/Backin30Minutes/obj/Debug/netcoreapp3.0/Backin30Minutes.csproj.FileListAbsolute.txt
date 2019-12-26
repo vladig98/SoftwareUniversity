@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\bin\Debug\netcoreapp3.0\Backin30Minutes.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\bin\Debug\netcoreapp3.0\Backin30Minutes.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\bin\Debug\netcoreapp3.0\Backin30Minutes.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\bin\Debug\netcoreapp3.0\Backin30Minutes.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\bin\Debug\netcoreapp3.0\Backin30Minutes.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\bin\Debug\netcoreapp3.0\Backin30Minutes.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\obj\Debug\netcoreapp3.0\Backin30Minutes.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\obj\Debug\netcoreapp3.0\Backin30Minutes.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\obj\Debug\netcoreapp3.0\Backin30Minutes.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\Backin30Minutes\obj\Debug\netcoreapp3.0\Backin30Minutes.pdb

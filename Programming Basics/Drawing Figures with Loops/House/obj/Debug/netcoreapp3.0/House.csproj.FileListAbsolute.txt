@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\House\bin\Debug\netcoreapp3.0\House.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\House\bin\Debug\netcoreapp3.0\House.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\House\bin\Debug\netcoreapp3.0\House.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\House\bin\Debug\netcoreapp3.0\House.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\House\bin\Debug\netcoreapp3.0\House.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\House\bin\Debug\netcoreapp3.0\House.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\House\obj\Debug\netcoreapp3.0\House.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\House\obj\Debug\netcoreapp3.0\House.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\House\obj\Debug\netcoreapp3.0\House.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\House\obj\Debug\netcoreapp3.0\House.pdb

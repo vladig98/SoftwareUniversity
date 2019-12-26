@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\bin\Debug\netcoreapp3.0\InchestoCentimeters.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\bin\Debug\netcoreapp3.0\InchestoCentimeters.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\bin\Debug\netcoreapp3.0\InchestoCentimeters.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\bin\Debug\netcoreapp3.0\InchestoCentimeters.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\bin\Debug\netcoreapp3.0\InchestoCentimeters.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\bin\Debug\netcoreapp3.0\InchestoCentimeters.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\obj\Debug\netcoreapp3.0\InchestoCentimeters.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\obj\Debug\netcoreapp3.0\InchestoCentimeters.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\obj\Debug\netcoreapp3.0\InchestoCentimeters.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\InchestoCentimeters\obj\Debug\netcoreapp3.0\InchestoCentimeters.pdb

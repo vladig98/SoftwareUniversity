@@ -1,0 +1,11 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\bin\Debug\netcoreapp3.0\LongestIncreasingSubsequence.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\bin\Debug\netcoreapp3.0\LongestIncreasingSubsequence.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\bin\Debug\netcoreapp3.0\LongestIncreasingSubsequence.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\bin\Debug\netcoreapp3.0\LongestIncreasingSubsequence.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\bin\Debug\netcoreapp3.0\LongestIncreasingSubsequence.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\bin\Debug\netcoreapp3.0\LongestIncreasingSubsequence.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\obj\Debug\netcoreapp3.0\LongestIncreasingSubsequence.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\obj\Debug\netcoreapp3.0\LongestIncreasingSubsequence.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\obj\Debug\netcoreapp3.0\LongestIncreasingSubsequence.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\obj\Debug\netcoreapp3.0\LongestIncreasingSubsequence.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\LongestIncreasingSubsequence\obj\Debug\netcoreapp3.0\LongestIncreasingSubsequence.csprojAssemblyReference.cache

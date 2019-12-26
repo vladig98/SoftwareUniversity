@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\bin\Debug\netcoreapp3.0\EvenorOdd.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\bin\Debug\netcoreapp3.0\EvenorOdd.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\bin\Debug\netcoreapp3.0\EvenorOdd.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\bin\Debug\netcoreapp3.0\EvenorOdd.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\bin\Debug\netcoreapp3.0\EvenorOdd.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\bin\Debug\netcoreapp3.0\EvenorOdd.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\obj\Debug\netcoreapp3.0\EvenorOdd.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\obj\Debug\netcoreapp3.0\EvenorOdd.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\obj\Debug\netcoreapp3.0\EvenorOdd.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\EvenorOdd\obj\Debug\netcoreapp3.0\EvenorOdd.pdb

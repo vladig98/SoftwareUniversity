@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\bin\Debug\netcoreapp3.0\RemoveNegativesandReverse.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\bin\Debug\netcoreapp3.0\RemoveNegativesandReverse.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\bin\Debug\netcoreapp3.0\RemoveNegativesandReverse.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\bin\Debug\netcoreapp3.0\RemoveNegativesandReverse.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\bin\Debug\netcoreapp3.0\RemoveNegativesandReverse.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\bin\Debug\netcoreapp3.0\RemoveNegativesandReverse.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\obj\Debug\netcoreapp3.0\RemoveNegativesandReverse.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\obj\Debug\netcoreapp3.0\RemoveNegativesandReverse.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\obj\Debug\netcoreapp3.0\RemoveNegativesandReverse.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\RemoveNegativesandReverse\obj\Debug\netcoreapp3.0\RemoveNegativesandReverse.pdb

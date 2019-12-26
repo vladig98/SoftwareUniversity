@@ -1,0 +1,11 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\bin\Debug\netcoreapp3.0\NumbersinReversedOrder.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\bin\Debug\netcoreapp3.0\NumbersinReversedOrder.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\bin\Debug\netcoreapp3.0\NumbersinReversedOrder.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\bin\Debug\netcoreapp3.0\NumbersinReversedOrder.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\bin\Debug\netcoreapp3.0\NumbersinReversedOrder.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\bin\Debug\netcoreapp3.0\NumbersinReversedOrder.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\obj\Debug\netcoreapp3.0\NumbersinReversedOrder.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\obj\Debug\netcoreapp3.0\NumbersinReversedOrder.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\obj\Debug\netcoreapp3.0\NumbersinReversedOrder.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\obj\Debug\netcoreapp3.0\NumbersinReversedOrder.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\NumbersinReversedOrder\obj\Debug\netcoreapp3.0\NumbersinReversedOrder.csprojAssemblyReference.cache

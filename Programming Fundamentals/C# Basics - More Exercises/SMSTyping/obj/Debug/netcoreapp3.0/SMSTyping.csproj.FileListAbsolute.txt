@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\bin\Debug\netcoreapp3.0\SMSTyping.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\bin\Debug\netcoreapp3.0\SMSTyping.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\bin\Debug\netcoreapp3.0\SMSTyping.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\bin\Debug\netcoreapp3.0\SMSTyping.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\bin\Debug\netcoreapp3.0\SMSTyping.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\bin\Debug\netcoreapp3.0\SMSTyping.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\obj\Debug\netcoreapp3.0\SMSTyping.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\obj\Debug\netcoreapp3.0\SMSTyping.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\obj\Debug\netcoreapp3.0\SMSTyping.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\SMSTyping\obj\Debug\netcoreapp3.0\SMSTyping.pdb

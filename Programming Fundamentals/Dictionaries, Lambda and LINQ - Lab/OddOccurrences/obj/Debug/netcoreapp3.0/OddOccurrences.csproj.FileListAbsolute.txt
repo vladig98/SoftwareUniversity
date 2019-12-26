@@ -1,0 +1,11 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\bin\Debug\netcoreapp3.0\OddOccurrences.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\bin\Debug\netcoreapp3.0\OddOccurrences.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\bin\Debug\netcoreapp3.0\OddOccurrences.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\bin\Debug\netcoreapp3.0\OddOccurrences.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\bin\Debug\netcoreapp3.0\OddOccurrences.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\bin\Debug\netcoreapp3.0\OddOccurrences.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\obj\Debug\netcoreapp3.0\OddOccurrences.csprojAssemblyReference.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\obj\Debug\netcoreapp3.0\OddOccurrences.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\obj\Debug\netcoreapp3.0\OddOccurrences.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\obj\Debug\netcoreapp3.0\OddOccurrences.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\OddOccurrences\obj\Debug\netcoreapp3.0\OddOccurrences.pdb

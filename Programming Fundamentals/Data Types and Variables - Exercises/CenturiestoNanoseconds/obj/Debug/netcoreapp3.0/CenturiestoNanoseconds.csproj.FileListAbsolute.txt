@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\bin\Debug\netcoreapp3.0\CenturiestoNanoseconds.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\bin\Debug\netcoreapp3.0\CenturiestoNanoseconds.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\bin\Debug\netcoreapp3.0\CenturiestoNanoseconds.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\bin\Debug\netcoreapp3.0\CenturiestoNanoseconds.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\bin\Debug\netcoreapp3.0\CenturiestoNanoseconds.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\bin\Debug\netcoreapp3.0\CenturiestoNanoseconds.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\obj\Debug\netcoreapp3.0\CenturiestoNanoseconds.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\obj\Debug\netcoreapp3.0\CenturiestoNanoseconds.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\obj\Debug\netcoreapp3.0\CenturiestoNanoseconds.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\CenturiestoNanoseconds\obj\Debug\netcoreapp3.0\CenturiestoNanoseconds.pdb

@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\bin\Debug\netcoreapp3.0\RhombusofStars.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\bin\Debug\netcoreapp3.0\RhombusofStars.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\bin\Debug\netcoreapp3.0\RhombusofStars.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\bin\Debug\netcoreapp3.0\RhombusofStars.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\bin\Debug\netcoreapp3.0\RhombusofStars.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\bin\Debug\netcoreapp3.0\RhombusofStars.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\obj\Debug\netcoreapp3.0\RhombusofStars.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\obj\Debug\netcoreapp3.0\RhombusofStars.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\obj\Debug\netcoreapp3.0\RhombusofStars.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\RhombusofStars\obj\Debug\netcoreapp3.0\RhombusofStars.pdb

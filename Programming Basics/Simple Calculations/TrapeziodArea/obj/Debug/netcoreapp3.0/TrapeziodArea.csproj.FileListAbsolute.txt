@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\bin\Debug\netcoreapp3.0\TrapeziodArea.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\bin\Debug\netcoreapp3.0\TrapeziodArea.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\bin\Debug\netcoreapp3.0\TrapeziodArea.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\bin\Debug\netcoreapp3.0\TrapeziodArea.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\bin\Debug\netcoreapp3.0\TrapeziodArea.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\bin\Debug\netcoreapp3.0\TrapeziodArea.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\obj\Debug\netcoreapp3.0\TrapeziodArea.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\obj\Debug\netcoreapp3.0\TrapeziodArea.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\obj\Debug\netcoreapp3.0\TrapeziodArea.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\TrapeziodArea\obj\Debug\netcoreapp3.0\TrapeziodArea.pdb

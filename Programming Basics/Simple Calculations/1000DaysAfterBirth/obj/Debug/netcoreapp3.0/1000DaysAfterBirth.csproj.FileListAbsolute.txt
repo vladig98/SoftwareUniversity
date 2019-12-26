@@ -1,0 +1,10 @@
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\bin\Debug\netcoreapp3.0\1000DaysAfterBirth.exe
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\bin\Debug\netcoreapp3.0\1000DaysAfterBirth.deps.json
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\bin\Debug\netcoreapp3.0\1000DaysAfterBirth.runtimeconfig.json
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\bin\Debug\netcoreapp3.0\1000DaysAfterBirth.runtimeconfig.dev.json
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\bin\Debug\netcoreapp3.0\1000DaysAfterBirth.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\bin\Debug\netcoreapp3.0\1000DaysAfterBirth.pdb
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\obj\Debug\netcoreapp3.0\1000DaysAfterBirth.AssemblyInfoInputs.cache
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\obj\Debug\netcoreapp3.0\1000DaysAfterBirth.AssemblyInfo.cs
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\obj\Debug\netcoreapp3.0\1000DaysAfterBirth.dll
+C:\Users\vladi\source\repos\SoftwareUniversity\1000DaysAfterBirth\obj\Debug\netcoreapp3.0\1000DaysAfterBirth.pdb
