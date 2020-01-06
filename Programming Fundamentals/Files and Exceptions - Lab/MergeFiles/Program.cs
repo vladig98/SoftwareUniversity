@@ -8,7 +8,7 @@ namespace MergeFiles
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Vladi\source\repos\Software University\SoftwareUniversity\Programming Fundamentals\Files and Exceptions - Lab\MergeFiles\";
+            string path = @"..\..\..\";
             string[] fileOne = File.ReadAllLines(path + "FileOne.txt");
             string[] fileTwo = File.ReadAllLines(path + "FileTwo.txt");
             List<string> result = new List<string>();

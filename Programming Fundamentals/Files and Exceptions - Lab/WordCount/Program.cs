@@ -9,7 +9,7 @@ namespace WordCount
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\Vladi\source\repos\Software University\SoftwareUniversity\Programming Fundamentals\Files and Exceptions - Lab\WordCount\";
+            string path = @"..\..\..\";
             string[] words = File.ReadAllText(path + "words.txt").Split(" ").ToArray();
             string[] text = File.ReadAllLines(path + "text.txt");
             string[] wordsFromText = string.Join(" ", text).Split(new[] { " ", ",", ".", "...", ":", "!", "-", "?" }, StringSplitOptions.RemoveEmptyEntries)
