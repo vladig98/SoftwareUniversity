@@ -36,7 +36,7 @@ namespace MentorGroup
 
                 if (users.Any(x => x.Name == tokens[0]))
                 {
-                    users.FirstOrDefault(x => x.Name == tokens[0]).Comments.AddRange(tokens.Skip(1));
+                    users.FirstOrDefault(x => x.Name == tokens[0]).Comments.Add(tokens[1]);
                 }
 
                 command = Console.ReadLine();
@@ -48,7 +48,7 @@ namespace MentorGroup
             {
                 Console.WriteLine(item.Name);
                 Console.WriteLine("Comments:");
-                foreach (var item2 in item.Comments.Distinct())
+                foreach (var item2 in item.Comments)
                 {
                     Console.WriteLine($"- {item2}");
                 }

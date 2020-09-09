@@ -6,31 +6,44 @@ namespace BalancedBrackets
     {
         static void Main(string[] args)
         {
-            //int number = int.Parse(Console.ReadLine());
-            //string input = string.Empty;
+            int numberOfInputLines = int.Parse(Console.ReadLine());
 
-            //for (int i = 0; i < number; i++)
-            //{
-            //    string temp = Console.ReadLine();
+            bool openingBracket = false;
+            bool unbalanced = false;
 
-            //    if (temp == input)
-            //    {
-            //        Console.WriteLine("UNBALANCED");
-            //        return;
-            //    }
+            for (int i = 0; i < numberOfInputLines; i++)
+            {
+                string input = Console.ReadLine();
 
-            //    if (temp == "(" || temp == ")")
-            //    {
-            //        if (input == string.Empty && temp == ")")
-            //        {
-            //            Console.WriteLine("UNBALANCED");
-            //            return;
-            //        }
-            //        input = temp;
-            //    }
-            //}
+                if (input == "(")
+                {
+                    if (openingBracket)
+                    {
+                        unbalanced = true;
+                    }
+                    openingBracket = true;
+                }
+                else if (input == ")")
+                {
+                    if (!openingBracket)
+                    {
+                        unbalanced = true;
+                    }
+                    else
+                    {
+                        openingBracket = false;
+                    }
+                }
+            }
 
-            //Console.WriteLine("BALANCED");
+            if (unbalanced || openingBracket)
+            {
+                Console.WriteLine("UNBALANCED");
+            }
+            else
+            {
+                Console.WriteLine("BALANCED");
+            }
         }
     }
 }

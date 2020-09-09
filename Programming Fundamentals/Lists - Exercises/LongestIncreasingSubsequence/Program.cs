@@ -8,45 +8,49 @@ namespace LongestIncreasingSubsequence
     {
         static void Main(string[] args)
         {
-            List<int> numbers = Console.ReadLine().Split(" ").Select(int.Parse).ToList<int>();
+            int[] nums = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            int maxLength = 0;
-            int lastIndex = -1;
-            int[] len = new int[numbers.Count];
-            int[] prev = new int[numbers.Count];
+            int n = nums.Length;
 
-            for (int i = 0; i < numbers.Count; i++)
+            int[] len = new int[n];
+            List<int>[] lis = new List<int>[n];
+
+            for (int i = 0; i < len.Length; i++)
             {
                 len[i] = 1;
-                prev[i] = -1;
+                lis[i] = new List<int>() { nums[i] };
+            }
 
-                for (int k = 0; k < i; k++)
+            for (int i = 1; i < n; i++)
+            {
+                for (int j = 0; j < i; j++)
                 {
-                    if (numbers[k] < numbers[i] && len[k] + 1 > len[i])
+                    if (nums[i] > nums[j])
                     {
-                        len[i] = len[k] + 1;
-                        prev[i] = k;
+                        if (len[i] < len[j] + 1)
+                        {
+                            len[i] = len[j] + 1;
+                            lis[i] = new List<int>();
+                            lis[i].AddRange(lis[j]);
+                            lis[i].Add(nums[i]);
+                        }
                     }
                 }
+            }
 
-                if (len[i] > maxLength)
+            var longest = new List<int>();
+
+            for (int i = 0; i < lis.Length; i++)
+            {
+                if (longest.Count < lis[i].Distinct().Count())
                 {
-                    maxLength = len[i];
-                    lastIndex = i;
+                    longest = lis[i].Distinct().ToList();
                 }
             }
 
-            int[] LIS = new int[maxLength];
-            int currentIndex = maxLength - 1;
+            longest = longest.OrderBy(x => x).ToList();
 
-            while (lastIndex != -1)
-            {
-                LIS[currentIndex] = numbers[lastIndex];
-                currentIndex--;
-                lastIndex = prev[lastIndex];
-            }
-
-            Console.WriteLine(string.Join(" ", LIS));
+            Console.WriteLine(string.Join(" ", longest));
         }
     }
 }
