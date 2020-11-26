@@ -1,0 +1,34 @@
+USE `softuni`;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='softuni';
+SHOW TABLE STATUS FROM `softuni`;
+SHOW FUNCTION STATUS WHERE `Db`='softuni';
+SHOW PROCEDURE STATUS WHERE `Db`='softuni';
+SHOW TRIGGERS FROM `softuni`;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='information_schema';
+SHOW TABLE STATUS FROM `information_schema`;
+SHOW FUNCTION STATUS WHERE `Db`='information_schema';
+SHOW PROCEDURE STATUS WHERE `Db`='information_schema';
+SHOW TRIGGERS FROM `information_schema`;
+SHOW EVENTS FROM `information_schema`;
+SELECT *, EVENT_SCHEMA AS `Db`, EVENT_NAME AS `Name` FROM information_schema.`EVENTS` WHERE `EVENT_SCHEMA`='softuni';
+SHOW ENGINES;
+CREATE TABLE `students` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`Name` VARCHAR(50) NOT NULL DEFAULT '0',
+	`Age` INT(11) NULL DEFAULT 0,
+	PRIMARY KEY (`Id`)
+)
+COLLATE='utf8mb4_general_ci'
+;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='softuni';
+SHOW TABLE STATUS FROM `softuni`;
+SHOW FUNCTION STATUS WHERE `Db`='softuni';
+SHOW PROCEDURE STATUS WHERE `Db`='softuni';
+SHOW TRIGGERS FROM `softuni`;
+SELECT *, EVENT_SCHEMA AS `Db`, EVENT_NAME AS `Name` FROM information_schema.`EVENTS` WHERE `EVENT_SCHEMA`='softuni';
+SELECT * FROM `information_schema`.`COLUMNS` WHERE TABLE_SCHEMA='softuni' AND TABLE_NAME='students' ORDER BY ORDINAL_POSITION;
+SHOW INDEXES FROM `students` FROM `softuni`;
+SELECT * FROM information_schema.REFERENTIAL_CONSTRAINTS WHERE   CONSTRAINT_SCHEMA='softuni'   AND TABLE_NAME='students'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SELECT * FROM information_schema.KEY_COLUMN_USAGE WHERE   CONSTRAINT_SCHEMA='softuni'   AND TABLE_NAME='students'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+/* Entering session "Unnamed" */
+SHOW CREATE TABLE `softuni`.`students`;
