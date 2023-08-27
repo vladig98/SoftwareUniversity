@@ -1,0 +1,16 @@
+USE Diablo
+GO
+
+CREATE FUNCTION ufn_CashInUsersGames (@gameName VARCHAR(255))
+RETURNS TABLE
+AS
+RETURN (
+	SELECT SUM(Cash) SumCash
+	FROM (
+	SELECT Cash, ROW_NUMBER() OVER (ORDER BY Cash DESC) rowNumber
+	FROM Games g
+	INNER JOIN UsersGames ug ON ug.GameId = g.Id
+	WHERE [Name] = @gameName) sub
+	WHERE rowNumber % 2 = 1
+)
+GO

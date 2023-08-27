@@ -1,0 +1,8 @@
+USE Gringotts
+GO
+
+SELECT TOP 2 DepositGroup FROM (
+SELECT DepositGroup, AVG(MagicWandSize) AS [Average]
+FROM WizzardDeposits
+GROUP BY DepositGroup) sub
+ORDER BY Average

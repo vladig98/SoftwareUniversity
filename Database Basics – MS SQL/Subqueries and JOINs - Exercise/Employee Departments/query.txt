@@ -1,0 +1,8 @@
+USE SoftUni
+GO
+
+SELECT TOP 5 EmployeeId, FirstName, Salary, d.[Name] DepartmentName
+FROM Employees e
+INNER JOIN Departments d ON d.DepartmentID = e.DepartmentID
+WHERE Salary > 15000
+ORDER BY d.DepartmentID

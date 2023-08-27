@@ -1,0 +1,15 @@
+USE Gringotts
+GO
+
+DECLARE @i INT = 1; 
+DECLARE @count INT = 0;
+DECLARE @amount DECIMAL(15,2) = 0;
+SELECT @count=  Count(*) FROM WizzardDeposits
+
+WHILE @i <= @count - 1
+BEGIN
+    SET @amount = @amount + ((SELECT DepositAmount FROM WizzardDeposits WHERE Id = @I) - (SELECT DepositAmount FROM WizzardDeposits WHERE Id = (@I + 1)))
+    SET @i = @i + 1;
+END
+
+SELECT @amount AS [SumDifference]

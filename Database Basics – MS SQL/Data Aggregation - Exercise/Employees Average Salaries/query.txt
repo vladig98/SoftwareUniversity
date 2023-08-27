@@ -1,0 +1,21 @@
+USE SoftUni
+GO
+
+SELECT *
+INTO EmployeesNew
+FROM Employees
+WHERE Salary > 30000
+GO
+
+DELETE FROM EmployeesNew
+WHERE ManagerID = 42
+GO
+
+UPDATE EmployeesNew
+SET Salary = Salary + 5000
+WHERE DepartmentID = 1
+GO
+
+SELECT DepartmentID, AVG(Salary)
+FROM EmployeesNew
+GROUP BY DepartmentID

@@ -1,0 +1,10 @@
+USE [Geography]
+GO
+
+SELECT CountryCode, MountainRange, PeakName, Elevation
+FROM Mountains m
+INNER JOIN Peaks p ON p.MountainId = m.Id
+INNER JOIN MountainsCountries mc ON mc.MountainId = p.MountainId
+WHERE CountryCode = 'BG'
+AND Elevation > 2835
+ORDER BY Elevation DESC

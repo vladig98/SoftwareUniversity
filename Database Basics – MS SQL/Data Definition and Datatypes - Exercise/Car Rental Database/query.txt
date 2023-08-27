@@ -1,0 +1,103 @@
+CREATE DATABASE CarRental
+GO
+
+USE CarRental
+GO
+
+CREATE TABLE Categories (
+Id INT IDENTITY,
+CategoryName VARCHAR(255) NOT NULL,
+DailyRate DECIMAL(15,2) NOT NULL,
+WeeklyRate DECIMAL(15,2) NOT NULL,
+MonthlyRate DECIMAL(15,2) NOT NULL,
+WeekendRate DECIMAL(15,2) NOT NULL,
+CONSTRAINT pk_CategoryId PRIMARY KEY (Id))
+GO
+
+CREATE TABLE Cars (
+Id INT IDENTITY,
+PlateNumber VARCHAR(255) NOT NULL,
+Manufacturer VARCHAR(255) NOT NULL,
+Model VARCHAR(255) NOT NULL,
+CarYear INT,
+CategoryId INT NOT NULL,
+Doors INT,
+Picture VARBINARY(2000),
+Condition VARCHAR(255),
+Available VARCHAR(5) NOT NULL,
+CONSTRAINT pk_CarsId PRIMARY KEY (Id),
+CONSTRAINT fk_CategoryId FOREIGN KEY (CategoryId) REFERENCES Categories(Id),
+CONSTRAINT available_values CHECK (Available in ('true', 'false')))
+GO
+
+CREATE TABLE Employees (
+Id INT IDENTITY,
+FirstName VARCHAR(255) NOT NULL,
+LastName VARCHAR(255) NOT NULL,
+Title VARCHAR(255),
+Notes VARCHAR(255),
+CONSTRAINT pk_EmployeesId PRIMARY KEY (Id))
+GO
+
+CREATE TABLE Customers (
+Id INT IDENTITY,
+DriverLicenseNumber VARCHAR(255) NOT NULL,
+FullName VARCHAR(255) NOT NULL,
+[Address] VARCHAR(255) NOT NULL,
+Ciry VARCHAR(255) NOT NULL,
+ZIPCode VARCHAR(255) NOT NULL,
+Notes VARCHAR(255),
+CONSTRAINT pk_CustomersId PRIMARY KEY (Id))
+GO
+
+CREATE TABLE RentalOrders (
+Id INT IDENTITY,
+EmployeeId INT NOT NULL,
+CustomerId INT NOT NULL,
+CarId INT NOT NULL,
+TankLevel DECIMAL(15,2) NOT NULL,
+KilometrageStart INT NOT NULL,
+KilometrageEnd INT NOT NULL,
+TotalKilometrage INT,
+StartDate DATETIME NOT NULL,
+EndDate DATETIME NOT NULL,
+TotalDays INT,
+RateApplied DECIMAL(15,2) NOT NULL,
+TaxRate DECIMAL(15,2) NOT NULL,
+OrderStatus VARCHAR(255) NOT NULL,
+Notes VARCHAR(255),
+CONSTRAINT pk_RentalOrdersId PRIMARY KEY (Id),
+CONSTRAINT fk_EmployeeId FOREIGN KEY (EmployeeId) REFERENCES Employees(Id),
+CONSTRAINT fk_CustomerId FOREIGN KEY (CustomerId) REFERENCES Customers(Id),
+CONSTRAINT fk_CarId FOREIGN KEY (CarId) REFERENCES Cars(Id))
+GO
+
+INSERT INTO Categories
+VALUES ('Category1', 10.0, 11.0, 12.0, 13.0),
+('Category2', 20.0, 21.0, 22.0, 23.0),
+('Category3', 30.0, 31.0, 32.0, 33.0)
+GO
+
+INSERT INTO Cars
+VALUES ('Car1', 'Mercedes-Benz', 'S63 AMG', 2020, 3, 5, NULL, 'NEW', 'true'),
+('Car2', 'Mercedes-Benz', 'S63 AMG', 2016, 2, 5, NULL, 'NEW', 'true'),
+('Car3', 'Mercedes-Benz', 'S63 AMG', 2010, 1, 5, NULL, 'NEW', 'true')
+GO
+
+INSERT INTO Employees
+VALUES ('Pesho', 'Peshov', 'Salesman', NULL),
+('Gosho', 'Goshov', 'Salesman', NULL),
+('Penko', 'Penkov', 'Salesman', NULL)
+GO
+
+INSERT INTO Customers
+VALUES ('G2232132', 'Peshoslav Slavov', 'Address1', 'Sofia', '3213SF', NULL),
+('F3434132', 'Goshoslav Slivkov', 'Address2', 'Sofia', '4451SF', NULL),
+('Z2242313', 'Svetoslav Chochkov', 'Address3', 'Sofia', '6432SF', NULL)
+GO
+
+INSERT INTO RentalOrders
+VALUES (1, 1, 1, 100, 100000, 100500, 500, '2023-01-01', '2023-01-02', 1, 30.0, 20, 'COMPLETE', NULL),
+(2, 2, 2, 90, 100000, 101000, 1000, '2023-01-03', '2023-01-05', 2, 20.0, 20, 'COMPLETE', NULL),
+(3, 3, 3, 40, 100000, 100100, 100, '2023-01-11', '2023-01-15', 4, 10.0, 20, 'COMPLETE', NULL)
+GO

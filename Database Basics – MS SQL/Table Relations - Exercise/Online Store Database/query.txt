@@ -1,0 +1,43 @@
+CREATE DATABASE OnlineStore
+GO
+
+USE OnlineStore
+GO
+
+CREATE TABLE Cities (
+CityID INT Identity,
+[Name] VARCHAR(50) NOT NULL,
+CONSTRAINT pk_cities_cityID PRIMARY KEY (CityID))
+
+CREATE TABLE Customers (
+CustomerID INT IDENTITY,
+[Name] VARCHAR(50) NOT NULL,
+Birthday DATETIME NOT NULL,
+CityID INT NOT NULL,
+CONSTRAINT pk_customers_customerID PRIMARY KEY (CustomerID),
+CONSTRAINT fk_customers_cityID FOREIGN KEY (CityID) REFERENCES Cities(CityID))
+
+CREATE TABLE Orders (
+OrderID INT IDENTITY,
+CustomerID INT NOT NULL,
+CONSTRAINT pk_orders_orderID PRIMARY KEY (OrderID),
+CONSTRAINT fk_orders_customerID FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID))
+
+CREATE TABLE ItemTypes (
+ItemTypeID INT IDENTITY,
+[Name] VARCHAR(50) NOT NULL,
+CONSTRAINT pk_itemTypes_itemTypeID PRIMARY KEY (ItemTypeID))
+
+CREATE TABLE Items (
+ItemID INT IDENTITY,
+[Name] VARCHAR(50) NOT NULL,
+ItemTypeID INT NOT NULL,
+CONSTRAINT pk_items_itemID PRIMARY KEY (ItemID),
+CONSTRAINT fk_items_itemTypeID FOREIGN KEY (ItemTypeID) REFERENCES ItemTypes(ItemTypeID))
+
+CREATE TABLE OrderItems (
+OrderID INT NOT NULL,
+ItemID INT NOT NULL,
+CONSTRAINT pk_orderItems_orderID_itemID PRIMARY KEY (OrderID, ItemID),
+CONSTRAINT fk_orderItems_orderID FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+CONSTRAINT fk_orderItems_itemID FOREIGN KEY (ItemID) REFERENCES Items(ItemID))

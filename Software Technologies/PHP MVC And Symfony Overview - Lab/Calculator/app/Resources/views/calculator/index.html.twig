@@ -19,6 +19,10 @@
                                 <option value="-" {{ calculator is defined and calculator.operator == '-' ? 'selected' : '' }}>-</option>
                                 <option value="*" {{ calculator is defined and calculator.operator == '*' ? 'selected' : '' }}>*</option>
                                 <option value="/" {{ calculator is defined and calculator.operator == '/' ? 'selected' : '' }}>/</option>
+                                <option value="v" {{ calculator is defined and calculator.operator == 'v' ? 'selected' : '' }}>^</option>
+                                <option value="&" {{ calculator is defined and calculator.operator == '&' ? 'selected' : '' }}>AND</option>
+                                <option value="|" {{ calculator is defined and calculator.operator == '|' ? 'selected' : '' }}>OR</option>
+                                <option value="^" {{ calculator is defined and calculator.operator == '^' ? 'selected' : '' }}>XOR</option>
                             </select>
                         </div>
                     </div>

@@ -1,0 +1,11 @@
+USE [Geography]
+GO
+
+SELECT TOP 5 CountryName, MAX(Elevation) HighestPeakElevation, MAX(r.[Length]) LongestRiverLength
+FROM Countries c
+INNER JOIN MountainsCountries mc ON mc.CountryCode = c.CountryCode
+INNER JOIN Peaks p ON p.MountainId = mc.MountainId
+INNER JOIN CountriesRivers cr on cr.CountryCode = c.CountryCode
+INNER JOIN Rivers r ON r.Id = cr.RiverId
+GROUP BY CountryName
+ORDER BY HighestPeakElevation DESC, LongestRiverLength DESC, CountryName

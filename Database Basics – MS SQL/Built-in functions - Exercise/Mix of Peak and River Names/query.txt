@@ -1,0 +1,12 @@
+USE [Geography]
+GO
+
+SELECT * FROM (
+SELECT PeakName, RiverName, CASE
+WHEN LOWER(RIGHT(PeakName, 1)) = LOWER(LEFT(RiverName, 1)) THEN LOWER(PeakName + SUBSTRING(RiverName, 2, LEN(RIVERNAME)))
+ELSE NULL
+END as Mix
+FROM Peaks, Rivers) sub
+WHERE Mix IS NOT NULL
+ORDER BY Mix
+GO

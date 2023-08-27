@@ -1,0 +1,74 @@
+CREATE DATABASE Movies
+GO
+
+USE Movies
+GO
+
+CREATE TABLE Directors (
+Id INT IDENTITY,
+DirectorName VARCHAR(255) NOT NULL,
+Notes VARCHAR(255),
+CONSTRAINT pk_DirectorId PRIMARY KEY (Id))
+GO
+
+CREATE TABLE Genres (
+Id INT IDENTITY,
+GenreName VARCHAR(255) NOT NULL,
+Notes VARCHAR(255),
+CONSTRAINT pk_GenreId PRIMARY KEY (Id))
+GO
+
+CREATE TABLE Categories (
+Id INT IDENTITY,
+CategoryName VARCHAR(255) NOT NULL,
+Notes VARCHAR(255),
+CONSTRAINT pk_CategoryId PRIMARY KEY (Id))
+GO
+
+CREATE TABLE Movies (
+Id INT IDENTITY,
+Title VARCHAR(255) NOT NULL,
+DirectorId INT NOT NULL,
+CopyrightYear DATE,
+[Length] INT,
+GenreId INT NOT NULL,
+CategoryId INT NOT NULL,
+Rating INT,
+Notes VARCHAR(255),
+CONSTRAINT pk_MovieId PRIMARY KEY (Id),
+CONSTRAINT fk_directorId FOREIGN KEY (DirectorId) REFERENCES Directors(Id),
+CONSTRAINT fk_genreId FOREIGN KEY (GenreId) REFERENCES Genres(Id),
+CONSTRAINT fk_categoryId FOREIGN KEY (CategoryId) REFERENCES Categories(Id))
+GO
+
+INSERT INTO Directors
+VALUES ('Director1', ''),
+('Director2', ''),
+('Director3', ''),
+('Director4', ''),
+('Director5', '')
+GO
+
+INSERT INTO Genres
+VALUES ('Genre1', ''),
+('Genre2', ''),
+('Genre3', ''),
+('Genre4', ''),
+('Genre5', '')
+GO
+
+INSERT INTO Categories
+VALUES ('Category1', ''),
+('Category2', ''),
+('Category3', ''),
+('Category4', ''),
+('Category5', '')
+GO
+
+INSERT INTO Movies
+VALUES ('Movie1', 1, NULL, 10, 1, 1, NULL, NULL),
+('Movie2', 2, NULL, 10, 2, 2, NULL, NULL),
+('Movie3', 3, NULL, 10, 3, 3, NULL, NULL),
+('Movie4', 4, NULL, 10, 4, 4, NULL, NULL),
+('Movie5', 5, NULL, 10, 5, 5, NULL, NULL)
+GO

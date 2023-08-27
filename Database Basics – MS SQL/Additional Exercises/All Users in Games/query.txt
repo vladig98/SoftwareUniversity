@@ -1,0 +1,10 @@
+USE Diablo
+GO
+
+SELECT g.[Name] [Game], gt.[Name] [Game Type], u.Username, ug.[Level], ug.Cash, c.[Name] [Character]
+FROM Games g
+JOIN GameTypes gt ON g.GameTypeId = gt.Id
+JOIN UsersGames ug ON ug.GameId = g.Id
+JOIN Users u ON u.Id = ug.UserId
+JOIN Characters c ON c.Id = ug.CharacterId
+ORDER BY [Level] DESC, Username, Game

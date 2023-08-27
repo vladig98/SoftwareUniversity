@@ -1,0 +1,4 @@
+USE Minions
+GO
+
+DELETE dbo.Minions

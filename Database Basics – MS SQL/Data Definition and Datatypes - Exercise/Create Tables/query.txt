@@ -1,0 +1,12 @@
+USE Minions;
+
+CREATE TABLE Minions (
+Id INT,
+[Name] VARCHAR(50),
+Age INT,
+CONSTRAINT PK_Minions PRIMARY KEY(Id));
+
+CREATE TABLE Towns(
+Id INT,
+[Name] VARCHAR(50),
+CONSTRAINT PK_Towns PRIMARY KEY(Id));

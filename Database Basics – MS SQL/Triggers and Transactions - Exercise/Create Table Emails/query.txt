@@ -1,0 +1,27 @@
+USE Bank
+GO
+
+CREATE TABLE NotificationEmails (
+Id INT IDENTITY,
+Recipient INT NOT NULL,
+[Subject] VARCHAR(255) NOT NULL,
+Body VARCHAR(255) NOT NULL)
+GO
+
+CREATE TRIGGER tr_Logs_NotificationEmail
+ON Logs
+FOR INSERT
+AS
+BEGIN
+	DECLARE @recipient INT = (SELECT AccountId FROM inserted)
+	DECLARE @subject VARCHAR(255)
+	DECLARE @oldBalance DECIMAL(15,4) = (SELECT OldSum FROM inserted)
+	DECLARE @newBalance DECIMAL(15,4) = (SELECT NewSum FROM inserted)
+	DECLARE @body VARCHAR(255)
+
+	SET @subject = 'Balance change for account: ' + CONVERT(VARCHAR(255), @recipient)
+	SET @body = 'On ' + CONVERT(VARCHAR(255), GETDATE()) + ' your balance was changed from ' + CONVERT(VARCHAR(255), @oldBalance) + ' to ' + CONVERT(VARCHAR(255), @newBalance) + '.'
+
+	INSERT INTO NotificationEmails
+	VALUES (@recipient, @subject, @body)
+END

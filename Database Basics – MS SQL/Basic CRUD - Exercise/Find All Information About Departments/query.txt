@@ -1,0 +1,6 @@
+USE SOftUni
+GO
+
+SELECT *
+FROM Departments
+GO

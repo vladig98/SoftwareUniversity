@@ -1,0 +1,26 @@
+CREATE DATABASE People
+GO
+
+USE People
+GO
+
+CREATE TABLE People (
+Id INT IDENTITY,
+[Name] VARCHAR(255) NOT NULL,
+Birthdate DATETIME NOT NULL,
+CONSTRAINT pk_people_id PRIMARY KEY (Id))
+GO
+
+INSERT INTO People
+VALUES ('Victor', '2000-12-07 00:00:00.000'),
+('Steven', '1992-09-10 00:00:00.000'),
+('Stephen', '1910-09-19 00:00:00.000'),
+('John', '2010-01-06 00:00:00.000')
+GO
+
+SELECT [Name], ABS(DATEDIFF(YEAR, GETDATE(), Birthdate)) AS [Age in Years], 
+ABS(DATEDIFF(MONTH, GETDATE(), Birthdate)) AS [Age in Months], 
+ABS(DATEDIFF(DAY, GETDATE(), Birthdate)) AS [Age in Days],
+ABS(DATEDIFF(MINUTE, GETDATE(), Birthdate)) AS [Age in Minutes]
+FROM People
+GO

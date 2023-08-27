@@ -1,0 +1,27 @@
+USE [Geography]
+GO
+
+SELECT TOP 5 Country, [Highest Peak Name], [Highest Peak Elevation], Mountain FROM (
+SELECT *, DENSE_RANK() OVER (PARTITION BY Country ORDER BY [Highest Peak Elevation] DESC) AS rowNumber
+FROM (
+SELECT CountryName AS Country, 
+CASE
+	WHEN PeakName IS NULL THEN '(no highest peak)'
+	ELSE PeakName 
+END AS [Highest Peak Name], 
+CASE 
+	WHEN MAX(Elevation) IS NULL THEN 0
+	ELSE MAX(Elevation) 
+END AS [Highest Peak Elevation], 
+CASE
+	WHEN MountainRange IS NULL THEN '(no mountain)'
+	ELSE MountainRange
+END AS [Mountain]
+FROM Countries c
+FULL OUTER JOIN MountainsCountries mc ON mc.CountryCode = c.CountryCode
+FULL OUTER JOIN Peaks p ON p.MountainId = mc.MountainId
+FULL OUTER JOIN Mountains m ON m.Id = mc.MountainId
+GROUP BY CountryName, PeakName, MountainRange) sub) sub2
+WHERE rowNumber = 1
+AND Country IS NOT NULL
+ORDER BY Country, [Highest Peak Name]

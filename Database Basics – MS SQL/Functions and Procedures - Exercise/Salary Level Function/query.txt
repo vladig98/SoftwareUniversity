@@ -1,0 +1,25 @@
+USE SoftUni
+GO
+
+CREATE FUNCTION ufn_GetSalaryLevel(@salary DECIMAL(18,4))
+RETURNS VARCHAR(50)
+AS
+BEGIN
+	IF (@salary < 30000)
+	BEGIN
+		RETURN 'Low'
+	END 
+	IF (@salary BETWEEN 30000 AND 50000)
+	BEGIN 
+		RETURN 'Average'
+	END
+	IF (@salary > 50000)
+	BEGIN 
+		RETURN 'High'
+	END
+	RETURN ''
+END
+GO
+
+SELECT Salary, dbo.ufn_GetSalaryLevel(Salary) [Salary Level]
+FROM Employees

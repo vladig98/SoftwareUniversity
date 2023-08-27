@@ -1,0 +1,15 @@
+USE SoftUni
+GO
+
+SELECT * FROM (
+SELECT e2.DepartmentID, (
+	SELECT DISTINCT Salary
+	FROM Employees e1
+	WHERE e1.DepartmentID = e2.DepartmentId
+	ORDER BY Salary DESC
+	OFFSET 2 ROWS
+	FETCH NEXT 1 ROWS ONLY) [ThirdHighestSalary]
+FROM Employees e2
+GROUP BY DepartmentID) sub
+WHERE ThirdHighestSalary IS NOT NULL
+ORDER BY DepartmentID

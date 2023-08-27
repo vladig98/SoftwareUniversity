@@ -1,0 +1,8 @@
+USE Diablo
+GO
+
+SELECT TOP 50 [Name], FORMAT([Start], N'yyyy-MM-dd') as [Start]
+FROM Games
+WHERE DATEPART(YEAR, [Start]) in (2011, 2012)
+ORDER BY [Start], [Name]
+GO

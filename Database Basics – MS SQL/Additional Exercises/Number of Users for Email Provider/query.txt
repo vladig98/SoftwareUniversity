@@ -1,0 +1,8 @@
+USE Diablo
+GO
+
+SELECT [Email Provider], COUNT([Email Provider]) [Number Of Users] FROM (
+SELECT SUBSTRING(Email, CHARINDEX('@', Email) + 1, LEN(Email) - CHARINDEX(Email, '@')) [Email Provider]
+FROM Users) sub
+GROUP BY [Email Provider]
+ORDER BY [Number Of Users] DESC, [Email Provider]

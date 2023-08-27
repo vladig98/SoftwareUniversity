@@ -1,0 +1,38 @@
+CREATE DATABASE University
+GO
+
+USE University
+GO
+
+CREATE TABLE Majors (
+MajorID INT IDENTITY,
+[Name] VARCHAR(50) NOT NULL,
+CONSTRAINT pk_majors_majorID PRIMARY KEY (MajorID))
+
+CREATE TABLE Students (
+StudentID INT IDENTITY,
+StudentNumber VARCHAR(50) NOT NULL,
+StudentName VARCHAR(50) NOT NULL,
+MajorID INT NOT NULL,
+CONSTRAINT pk_students_studentID PRIMARY KEY (StudentID),
+CONSTRAINT fk_students_majorID FOREIGN KEY (MajorID) REFERENCES Majors(MajorID))
+
+CREATE TABLE Payments (
+PaymentID INT IDENTITY,
+PaymentDate DATETIME NOT NULL,
+PaymentAmount DECIMAL(15,2) NOT NULL,
+StudentID INT NOT NULL,
+CONSTRAINT pk_payments_paymentID PRIMARY KEY (PaymentID),
+CONSTRAINT fk_payments_studentID FOREIGN KEY (StudentID) REFERENCES Students(StudentID))
+
+CREATE TABLE Subjects (
+SubjectID INT IDENTITY,
+SubjectName VARCHAR(50) NOT NULL,
+CONSTRAINT pk_subjects_subjectID PRIMARY KEY (SubjectID))
+
+CREATE TABLE Agenda (
+StudentID INT NOT NULL,
+SubjectID INT NOT NULL,
+CONSTRAINT pk_agenda_studentID_subjectID PRIMARY KEY (StudentID, SubjectID),
+CONSTRAINT fk_agenda_studentID FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+CONSTRAINT fk_agenda_subjectID FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID))

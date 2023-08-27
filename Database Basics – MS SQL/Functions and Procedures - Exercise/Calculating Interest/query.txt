@@ -1,0 +1,14 @@
+USE Bank
+GO
+
+CREATE PROCEDURE usp_CalculateFutureValueForAccount (@accountID INT, @rate DECIMAL(15,2))
+AS
+BEGIN
+	SELECT a.Id, FirstName, LastName, Balance, dbo.ufn_CalculateFutureValue(Balance, @rate, 5) [Balance in 5 years]
+	FROM AccountHolders ah
+	INNER JOIN Accounts a ON ah.Id = a.AccountHolderId
+	WHERE a.Id = @accountID
+END
+GO
+
+EXEC dbo.usp_CalculateFutureValueForAccount @accountID = 1, @rate = 0.1

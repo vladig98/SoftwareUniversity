@@ -1,0 +1,13 @@
+USE [Geography]
+GO
+
+SELECT ContinentCode, CurrencyCode, CurrencyUsage
+FROM (
+SELECT ContinentCode, DENSE_RANK() OVER (PARTITION BY ContinentCode ORDER BY CurrencyUsage DESC) row_num, CurrencyCode, CurrencyUsage 
+FROM 
+(SELECT ContinentCode, CurrencyCode, COUNT(CurrencyCode) CurrencyUsage
+FROM Countries
+GROUP BY ContinentCode, CurrencyCode) sub) sub2
+WHERE row_num = 1
+AND CurrencyUsage > 1
+ORDER BY ContinentCode

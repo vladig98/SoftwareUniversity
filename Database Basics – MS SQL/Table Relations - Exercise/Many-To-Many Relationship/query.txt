@@ -1,0 +1,33 @@
+USE People
+GO
+
+CREATE TABLE Students (
+StudentID INT IDENTITY,
+[Name] VARCHAR(255) NOT NULL,
+CONSTRAINT pk_students_studentID PRIMARY KEY (StudentID))
+
+CREATE TABLE Exams (
+ExamID INT NOT NULL,
+[Name] VARCHAR(255) NOT NULL,
+CONSTRAINT pk_exams_examID PRIMARY KEY (ExamID))
+
+CREATE TABLE StudentsExams (
+StudentID INT NOT NULL,
+ExamID INT NOT NULL,
+CONSTRAINT pk_studentsExams_studentID_examID PRIMARY KEY (StudentID, ExamID),
+CONSTRAINT fk_studentsExams_studentID FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+CONSTRAINT fk_studentsExams_examID FOREIGN KEY (ExamID) REFERENCES Exams(ExamID))
+
+INSERT INTO Students
+VALUES ('Mila'), ('Toni'), ('Ron')
+
+INSERT INTO Exams
+VALUES (101, 'SpringMVC'), (102, 'Neo4j'), (103, 'Oracle 11g')
+
+INSERT INTO StudentsExams
+VALUES (1, 101),
+(1, 102),
+(2, 101),
+(3, 103),
+(2, 102),
+(2, 103)

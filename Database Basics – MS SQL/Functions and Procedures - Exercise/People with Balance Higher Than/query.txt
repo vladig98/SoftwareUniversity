@@ -1,0 +1,20 @@
+USE Bank
+GO
+
+DROP PROCEDURE dbo.usp_GetHoldersWithBalanceHigherThan
+GO
+
+CREATE PROCEDURE usp_GetHoldersWithBalanceHigherThan (@target_balance DECIMAL(15,2))
+AS
+BEGIN
+	SELECT h.FirstName, h.LastName
+	FROM AccountHolders h
+    JOIN Accounts AS a ON a.AccountHolderId = h.id 
+    GROUP BY FirstName, LastName
+    HAVING SUM(a.balance) > @target_balance
+	ORDER BY h.FirstName, h.LastName;
+END
+GO
+
+EXEC dbo.usp_GetHoldersWithBalanceHigherThan @target_balance = 7000
+GO

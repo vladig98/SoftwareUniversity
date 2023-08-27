@@ -1,0 +1,12 @@
+USE Bank
+GO
+
+CREATE PROCEDURE usp_TransferMoney (@SenderId INT, @ReceiverId INT, @Amount DECIMAL(15, 4))
+AS
+BEGIN
+	IF (@Amount > 0)
+	BEGIN
+		EXEC dbo.usp_DepositMoney @AccountId = @ReceiverId, @MoneyAmount = @Amount
+		EXEC dbo.usp_WithdrawMoney @AccountId = @SenderId, @MoneyAmount = @amount
+	END
+END

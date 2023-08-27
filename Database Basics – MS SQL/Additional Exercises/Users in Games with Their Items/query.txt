@@ -1,0 +1,13 @@
+USE Diablo
+GO
+
+SELECT * FROM (
+SELECT u.Username, g.[Name] [Game], COUNT(i.Id) [Items Count], SUM(i.Price) [Items Price]
+FROM UsersGames ug
+INNER JOIN Users u ON u.Id = ug.UserId
+INNER JOIN Games g ON g.Id = ug.GameId
+INNER JOIN UserGameItems ugi ON ugi.UserGameId = ug.Id
+INNER JOIN Items i ON i.Id = ugi.ItemId
+GROUP BY g.[Name], Username) sub
+WHERE [Items Count] >= 10
+ORDER BY [Items Count] DESC, [Items Price] DESC, Username

@@ -1,0 +1,11 @@
+USE Minions
+GO
+
+ALTER TABLE Users
+DROP CONSTRAINT pk_Id_and_Username
+GO
+
+ALTER TABLE Users
+ADD CONSTRAINT pk_Id PRIMARY KEY (Id),
+CONSTRAINT username_longerThanThree CHECK (LEN(Username) > 3)
+GO

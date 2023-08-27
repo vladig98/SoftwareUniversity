@@ -1,0 +1,8 @@
+USE SoftUni
+GO
+
+SELECT TOP 50 FirstName, LastName, t.[Name] Town, AddressText
+FROM Employees e
+INNER JOIN Addresses a ON e.AddressID = a.AddressID
+INNER JOIN Towns t ON t.TownID = a.TownID
+ORDER BY FirstName, LastName

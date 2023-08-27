@@ -1,0 +1,6 @@
+USE SOftUni
+GO
+
+SELECT DISTINCT Salary
+FROM Employees
+GO

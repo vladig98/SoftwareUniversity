@@ -1,0 +1,9 @@
+USE SoftUni
+GO
+
+SELECT FirstName, LastName, HireDate, d.[Name] DeptName
+FROM Employees e
+INNER JOIN Departments d ON d.DepartmentID = e.DepartmentID
+WHERE HireDate > '1999-01-01'
+AND d.[Name] in ('Sales', 'Finance')
+ORDER BY HireDate

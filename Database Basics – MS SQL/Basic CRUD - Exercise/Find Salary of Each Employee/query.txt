@@ -1,0 +1,6 @@
+USE SOftUni
+GO
+
+SELECT FirstName, LastName, Salary
+FROM Employees
+GO

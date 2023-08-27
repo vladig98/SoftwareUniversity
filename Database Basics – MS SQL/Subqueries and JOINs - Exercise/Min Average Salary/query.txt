@@ -1,0 +1,7 @@
+USE SoftUni
+GO
+
+SELECT MIN(AvgSalary) MinAverageSalary FROM (
+SELECT DepartmentID, AVG(Salary) AvgSalary
+FROM Employees
+GROUP BY DepartmentID) sub

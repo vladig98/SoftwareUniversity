@@ -1,0 +1,7 @@
+USE SoftUni
+GO
+
+SELECT TOP 3 EmployeeID, FirstName
+FROM Employees e
+WHERE e.EmployeeID NOT IN (SELECT EmployeeID FROM EmployeesProjects)
+ORDER BY EmployeeID

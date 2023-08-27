@@ -1,0 +1,22 @@
+USE Bank
+GO
+
+CREATE TABLE Logs (
+LogId INT IDENTITY,
+AccountId INT NOT NULL,
+OldSum DECIMAL(15,2) NOT NULL,
+NewSum DECIMAL(15,2) NOT NULL)
+GO
+
+CREATE TRIGGER tr_Accounts_Logs
+ON Accounts
+FOR UPDATE
+AS
+BEGIN
+	DECLARE @AccountID INT = (SELECT Id FROM inserted)
+	DECLARE @OldSum DECIMAL(15,4) = (SELECT Balance FROM deleted)
+	DECLARE @NewSum DECIMAL(15,4) = (SELECT Balance FROM inserted)
+
+	INSERT INTO Logs
+	VALUES (@AccountID, @OldSum, @NewSum)
+END

@@ -1,0 +1,21 @@
+USE Minions
+GO
+
+CREATE TABLE Users (
+Id INT NOT NULL IDENTITY,
+Username VARCHAR(30) UNIQUE NOT NULL,
+[Password] VARCHAR(26) NOT NULL,
+ProfilePicture VARBINARY(900),
+LastLoginTime DATETIME,
+IsDeleted VARCHAR(5),
+CONSTRAINT IsDeleted_possibleValues CHECK (IsDeleted IN ('false', 'true')),
+CONSTRAINT pk_Id PRIMARY KEY (Id))
+GO
+
+INSERT INTO Users
+VALUES ('Username1', 'Password1', CAST('Picture1' AS VARBINARY(MAX)), '2023-01-01 01:01:01', 'false'),
+('Username2', 'Password2', CAST('Picture2' AS VARBINARY(MAX)), '2023-02-02 02:02:02', 'false'),
+('Username3', 'Password3', CAST('Picture3' AS VARBINARY(MAX)), '2023-03-03 03:03:03', 'false'),
+('Username4', 'Password4', CAST('Picture4' AS VARBINARY(MAX)), '2023-04-04 04:04:04', 'false'),
+('Username5', 'Password5', CAST('Picture5' AS VARBINARY(MAX)), '2023-05-05 05:05:05', 'false')
+GO

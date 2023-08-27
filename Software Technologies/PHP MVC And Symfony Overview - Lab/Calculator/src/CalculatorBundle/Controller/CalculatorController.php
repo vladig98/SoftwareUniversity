@@ -23,6 +23,57 @@ class CalculatorController extends Controller
     {
         // TODO add $form and calculation logic;
 
-        return $this->render('calculator/index.html.twig');
+        $calculator = new Calculator();
+
+        $form = $this->createForm(CalculatorType::class, $calculator);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $leftOperand = $calculator->getLeftOperand();
+            $rightOperand = $calculator->getRightOperand();
+            $operator = $calculator->getOperator();
+
+            $result = 0;
+
+            switch ($operator) {
+                case "+":
+                    $result = $leftOperand + $rightOperand;
+                    break;
+                case "-":
+                    $result = $leftOperand - $rightOperand;
+                    break;
+                case "*":
+                    $result = $leftOperand * $rightOperand;
+                    break;
+                case "/":
+                    $result = $leftOperand / $rightOperand;
+                    break;
+                case "v":
+                    $result = 1;
+                    for ($i = 0; $i < $rightOperand; $i++)
+                    {
+                        $result = $result * $leftOperand;
+                    }
+                    break;
+                case "^":
+                    $result = $leftOperand ^ $rightOperand;
+                    break;
+                case "&":
+                    $result = $leftOperand & $rightOperand;
+                    break;
+                case "|":
+                    $result = $leftOperand | $rightOperand;
+                    break;
+                default:
+                    break;
+            }
+
+            return $this->render('calculator/index.html.twig',
+                ['result' => $result, 'calculator' => $calculator, 'form' => $form->createView()]);
+        }
+
+        return $this->render('calculator/index.html.twig',
+        ['form' => $form->createView()]);
     }
 }

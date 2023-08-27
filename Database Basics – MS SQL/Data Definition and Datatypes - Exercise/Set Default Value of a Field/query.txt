@@ -1,0 +1,6 @@
+USE Minions
+GO
+
+ALTER TABLE Users
+ADD CONSTRAINT lastLoginTime_default DEFAULT GETDATE() FOR LastLoginTime
+GO

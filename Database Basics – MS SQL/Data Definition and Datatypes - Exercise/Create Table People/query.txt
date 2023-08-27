@@ -1,0 +1,23 @@
+USE Minions
+GO
+
+CREATE TABLE People (
+Id INT IDENTITY(1,1) NOT NULL UNIQUE,
+[Name] VARCHAR(200) NOT NULL,
+Picture VARBINARY(2000),
+Height DECIMAL(10, 2),
+[Weight] DECIMAL(10, 2),
+Gender CHAR NOT NULL,
+Birthdate DATE NOT NULL,
+Biography NVARCHAR(MAX),
+CONSTRAINT gender_constraint CHECK (Gender in ('m', 'f'))
+)
+GO
+
+INSERT INTO People
+VALUES ('Name1', CAST('Picture1' AS VARBINARY(MAX)), 100.10, 101.11, 'm', '2023-01-01', 'Biography1'),
+('Name2', CAST('Picture2' AS VARBINARY(MAX)), 100.20, 102.22, 'm', '2023-02-02', 'Biography2'),
+('Name3', CAST('Picture3' AS VARBINARY(MAX)), 100.30, 103.33, 'm', '2023-03-03', 'Biography3'),
+('Name4', CAST('Picture4' AS VARBINARY(MAX)), 100.40, 104.44, 'm', '2023-04-04', 'Biography4'),
+('Name5', CAST('Picture5' AS VARBINARY(MAX)), 100.50, 105.55, 'm', '2023-05-05', 'Biography5')
+GO

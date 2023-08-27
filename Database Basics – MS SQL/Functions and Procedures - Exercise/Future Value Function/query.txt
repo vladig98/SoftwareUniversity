@@ -1,0 +1,13 @@
+USE Bank
+GO
+
+CREATE FUNCTION ufn_CalculateFutureValue (@sum DECIMAL(15,2), @yearlyInterestRate FLOAT, @numberOfYears INT)
+RETURNS DECIMAL(15,4)
+BEGIN
+	DECLARE @FV DECIMAL(15,4)
+	SET @FV = @sum * (POWER((1 + @yearlyInterestRate), @numberOfYears))
+	RETURN @FV
+END
+GO
+
+SELECT dbo.ufn_CalculateFutureValue (1000, 0.1, 5)

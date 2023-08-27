@@ -1,0 +1,134 @@
+CREATE DATABASE Hotel
+GO
+
+USE Hotel
+GO
+
+CREATE TABLE Employees (
+Id INT IDENTITY,
+FirstName VARCHAR(255) NOT NULL,
+LastName VARCHAR(255) NOT NULL,
+Title VARCHAR(255) NOT NULL,
+Notes VARCHAR(255),
+CONSTRAINT pk_EmployeesId PRIMARY KEY (Id))
+GO
+
+CREATE TABLE Customers (
+AccountNumber BIGINT NOT NULL,
+FirstName VARCHAR(255) NOT NULL,
+LastName VARCHAR(255) NOT NULL,
+PhoneNumber BIGINT NOT NULL,
+EmergencyName VARCHAR(255),
+EmergencyPhone BIGINT,
+Notes VARCHAR(255),
+CONSTRAINT pk_CustomersAccountNumber PRIMARY KEY (AccountNumber))
+GO
+
+CREATE TABLE RoomStatus (
+RoomStatus VARCHAR(255),
+Notes VARCHAR(255),
+CONSTRAINT pk_RoomStatus PRIMARY KEY (RoomStatus))
+GO
+
+CREATE TABLE RoomTypes (
+RoomType VARCHAR(255),
+Notes VARCHAR(255),
+CONSTRAINT pk_RoomType PRIMARY KEY (RoomType))
+GO
+
+CREATE TABLE BedTypes (
+BedType VARCHAR(255),
+Notes VARCHAR(255),
+CONSTRAINT pk_BedType PRIMARY KEY (BedType))
+GO
+
+CREATE TABLE Rooms(
+RoomNumber INT IDENTITY,
+RoomType VARCHAR(255) NOT NULL,
+BedType VARCHAR(255) NOT NULL,
+Rate DECIMAL(15,2) NOT NULL,
+RoomStatus VARCHAR(255) NOT NULL,
+Notes VARCHAR(255),
+CONSTRAINT pk_RoomNumber PRIMARY KEY (RoomNumber),
+CONSTRAINT fk_RoomType FOREIGN KEY (RoomType) REFERENCES RoomTypes(RoomType),
+CONSTRAINT fk_BedType FOREIGN KEY (BedType) REFERENCES BedTypes(BedType),
+CONSTRAINT fk_RoomStatus FOREIGN KEY (RoomStatus) REFERENCES RoomStatus(RoomStatus))
+GO
+
+CREATE TABLE Payments (
+Id INT IDENTITY,
+EmployeeId INT NOT NULL,
+PaymentDate DATETIME NOT NULL,
+AccountNumber BIGINT NOT NULL,
+FirstDateOccupied DATETIME NOT NULL,
+LastDateOccupied DATETIME NOT NULL,
+TotalDays INT,
+AmountCharged DECIMAL(15,2) NOT NULL,
+TaxRate DECIMAL(15,2) NOT NULL,
+TaxAmount DECIMAL(15,2) NOT NULL,
+PaymentTotal DECIMAL(15,2) NOT NULL,
+Notes VARCHAR(255),
+CONSTRAINT pk_PaymentID PRIMARY KEY (Id),
+CONSTRAINT fk_EmployeeId FOREIGN KEY (EmployeeId) REFERENCES Employees(Id))
+GO
+
+CREATE TABLE Occupancies (
+Id INT IDENTITY,
+EmployeeId INT NOT NULL,
+DateOccupied DATETIME NOT NULL,
+AccountNumber BIGINT NOT NULL,
+RoomNumber INT NOT NULL,
+RateApplied DECIMAL(15,2),
+PhoneCharge DECIMAL(15,2),
+Notes VARCHAR(255),
+CONSTRAINT pk_OccupanciesId PRIMARY KEY (Id),
+CONSTRAINT fk_EmployeeIdOccupancies FOREIGN KEY (EmployeeId) REFERENCES Employees(Id))
+GO
+
+INSERT INTO Employees
+VALUES ('Name1', 'LastName1', 'Salesman', NULL),
+('Name2', 'LastName2', 'Salesman', NULL),
+('Name3', 'LastName3', 'Salesman', NULL)
+GO
+
+INSERT INTO Customers
+VALUES (11111, 'Name1', 'LastName1', 1111111111, 'EN1', 1111111111, NULL),
+(22222, 'Name2', 'LastName2', 2222222222, 'EN2', 2222222222, NULL),
+(33333, 'Name3', 'LastName3', 3333333333, 'EN3', 3333333333, NULL)
+GO
+
+INSERT INTO RoomStatus
+VALUES ('Free', NULL),
+('Taken', NULL),
+('n\a', NULL)
+GO
+
+INSERT INTO RoomTypes
+VALUES ('Single', NULL),
+('Double', NULL),
+('Penthouse', NULL)
+GO
+
+INSERT INTO BedTypes
+VALUES ('Single', NULL),
+('Double', NULL),
+('King size', NULL)
+GO
+
+INSERT INTO Rooms
+VALUES ('Single', 'Single', 10.0, 'Free', NULL),
+('Double', 'Double', 20.0, 'Taken', NULL),
+('Penthouse', 'King size', 30.0, 'n\a', NULL)
+GO
+
+INSERT INTO Payments
+VALUES (1, '2023-01-01', 11111, '2023-01-01', '2023-01-03', 2, 20.0, 20, 4, 24.0, NULL),
+(2, '2023-02-01', 22222, '2023-02-01', '2023-02-03', 2, 40.0, 20, 8, 48.0, NULL),
+(3, '2023-03-01', 33333, '2023-03-01', '2023-03-03', 2, 60.0, 20, 12, 72.0, NULL)
+GO
+
+INSERT INTO Occupancies
+VALUES (1, '2023-01-01', 11111, 1, 10.0, 0, NULL),
+(2, '2023-02-01', 22222, 2, 20.0, 0, NULL),
+(3, '2023-03-01', 33333, 3, 30.0, 0, NULL)
+GO

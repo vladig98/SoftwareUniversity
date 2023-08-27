@@ -1,0 +1,13 @@
+SELECT c.CountryName,
+	   MAX(conts.ContinentName) AS ContinentName,
+	   COUNT(r.Id) AS [RiversCount],
+	   IIF(SUM(r.Length) IS NULL, 0,SUM(r.Length)) AS [TotalLength]
+FROM Countries c
+LEFT JOIN Continents conts
+ON conts.ContinentCode=c.ContinentCode
+LEFT JOIN CountriesRivers cr
+ON cr.CountryCode=c.CountryCode
+LEFT JOIN Rivers r
+ON r.Id=cr.RiverId
+GROUP BY c.CountryName
+ORDER BY RiversCount DESC, TotalLength DESC, c.CountryName

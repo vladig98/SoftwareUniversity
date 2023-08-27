@@ -1,0 +1,25 @@
+USE SoftUni
+GO
+
+BACKUP DATABASE SoftUni
+TO DISK = 'PATH\softuni-backup.bak';
+GO
+
+UPDATE Employees
+SET Salary = Salary * 1.12
+WHERE DepartmentID IN (1, 2, 4, 11)
+GO
+
+SELECT Salary
+FROM Employees
+GO
+
+USE Bank
+GO
+
+DROP DATABASE SoftUni
+GO
+
+RESTORE DATABASE SoftUni
+FROM DISK = 'PATH\softuni-backup.bak';
+GO

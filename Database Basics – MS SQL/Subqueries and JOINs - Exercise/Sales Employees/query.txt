@@ -1,0 +1,8 @@
+USE SoftUni
+GO
+
+SELECT EmployeeId, FirstName, LastName, d.[Name] DepartmentName
+FROM Employees e
+INNER JOIN Departments d ON d.DepartmentID = e.DepartmentID
+WHERE d.[Name] = 'Sales'
+ORDER BY EmployeeID
