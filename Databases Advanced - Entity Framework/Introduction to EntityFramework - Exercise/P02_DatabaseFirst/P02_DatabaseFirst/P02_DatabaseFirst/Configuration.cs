@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace P02_DatabaseFirst
+namespace SoftUni
 {
     public class Configuration
     {
