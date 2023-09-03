@@ -1,0 +1,13 @@
+BACKUP DATABASE SoftUni
+TO DISK = 'PATH\softuni-backup.bak';
+GO
+
+USE Bank
+GO
+
+DROP DATABASE SoftUni
+GO
+
+RESTORE DATABASE SoftUni
+FROM DISK = 'PATH\softuni-backup.bak';
+GO
