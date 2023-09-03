@@ -15,8 +15,8 @@ namespace P01_StudentSystem.EntityConfig
             builder.Property(x => x.Name).HasMaxLength(100).IsUnicode(true);
             builder.Property(x => x.PhoneNumber).HasMaxLength(10).IsUnicode(false).IsRequired(false);
             builder.Property(x => x.Birthday).IsRequired(false);
-            builder.HasMany(x => x.StudentsCourses).WithOne(x => x.Student).HasForeignKey(x => x.StudentId);
-            builder.HasMany(x => x.Homeworks).WithOne(x => x.Student).HasForeignKey(x => x.StudentId);
+            builder.HasMany(x => x.CourseEnrollments).WithOne(x => x.Student).HasForeignKey(x => x.StudentId);
+            builder.HasMany(x => x.HomeworkSubmissions).WithOne(x => x.Student).HasForeignKey(x => x.StudentId);
 
             builder.HasData(new Student { Birthday = DateTime.Now.AddYears(-22), Name = "Student1", PhoneNumber = "5555555555",
             RegisteredOn = DateTime.Now, StudentId = 1});

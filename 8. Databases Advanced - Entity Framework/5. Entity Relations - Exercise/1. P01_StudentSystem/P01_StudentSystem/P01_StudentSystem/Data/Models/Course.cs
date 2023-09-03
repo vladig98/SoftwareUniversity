@@ -8,9 +8,9 @@ namespace P01_StudentSystem.Data.Models
     {
         public Course()
         {
-            StudentsCourses = new HashSet<StudentCourse>();
+            StudentsEnrolled = new HashSet<StudentCourse>();
             Resources = new HashSet<Resource>();
-            Homeworks = new HashSet<Homework>();
+            HomeworkSubmissions = new HashSet<Homework>();
         }
 
         public int CourseId { get; set; }
@@ -19,8 +19,8 @@ namespace P01_StudentSystem.Data.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public decimal Price { get; set; }
-        public ICollection<StudentCourse> StudentsCourses { get; set; }
+        public ICollection<StudentCourse> StudentsEnrolled { get; set; }
         public ICollection<Resource> Resources { get; set; }
-        public ICollection<Homework> Homeworks { get; set; }
+        public ICollection<Homework> HomeworkSubmissions { get; set; }
     }
 }

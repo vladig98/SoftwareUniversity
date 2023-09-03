@@ -14,8 +14,8 @@ namespace P01_StudentSystem.EntityConfig
             builder.HasKey(x => x.CourseId);
             builder.Property(x => x.Name).HasMaxLength(80).IsUnicode(true);
             builder.Property(x => x.Description).IsUnicode(true).IsRequired(false);
-            builder.HasMany(x => x.StudentsCourses).WithOne(x => x.Course).HasForeignKey(x => x.CourseId);
-            builder.HasMany(x => x.Homeworks).WithOne(x => x.Course).HasForeignKey(x => x.CourseId);
+            builder.HasMany(x => x.StudentsEnrolled).WithOne(x => x.Course).HasForeignKey(x => x.CourseId);
+            builder.HasMany(x => x.HomeworkSubmissions).WithOne(x => x.Course).HasForeignKey(x => x.CourseId);
             builder.HasMany(x => x.Resources).WithOne(x => x.Course).HasForeignKey(x => x.CourseId);
             
             builder.HasData(new Course { CourseId = 1, Name = "Course1", Description = "Description", StartDate = DateTime.Now,

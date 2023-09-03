@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using P02_FootballBetting.Data.Models;
+using P03_FootballBetting.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace P02_FootballBetting.Data
+namespace P03_FootballBetting.Data
 {
     public class FootballBettingContext : DbContext
     {
@@ -15,7 +15,7 @@ namespace P02_FootballBetting.Data
         public DbSet<Country> Countries { get; set; }
         public DbSet<Player> Players { get; set; }
         public DbSet<Position> Positions { get; set; }
-        public DbSet<PlayerStatistic> PlayersStatistics { get; set; }
+        public DbSet<PlayerStatistic> PlayerStatistics { get; set; }
         public DbSet<Game> Games { get; set; }
         public DbSet<User> Users { get; set; }
 
@@ -56,13 +56,13 @@ namespace P02_FootballBetting.Data
             modelBuilder.Entity<Game>().HasOne(x => x.HomeTeam).WithMany(x => x.HomeGames).HasForeignKey(x => x.HomeTeamId);
             modelBuilder.Entity<Game>().HasOne(x => x.AwayTeam).WithMany(x => x.AwayGames).HasForeignKey(x => x.AwayTeamId);
             modelBuilder.Entity<Game>().HasMany(x => x.Bets).WithOne(x => x.Game).HasForeignKey(x => x.GameId);
-            modelBuilder.Entity<Game>().HasMany(x => x.PlayersStatistics).WithOne(x => x.Game).HasForeignKey(x => x.GameId);
+            modelBuilder.Entity<Game>().HasMany(x => x.PlayerStatistics).WithOne(x => x.Game).HasForeignKey(x => x.GameId);
 
             modelBuilder.Entity<Country>().HasMany(x => x.Towns).WithOne(x => x.Country).HasForeignKey(x => x.CountryId);
 
             modelBuilder.Entity<Player>().HasOne(x => x.Team).WithMany(x => x.Players).HasForeignKey(x => x.PlayerId);
             modelBuilder.Entity<Player>().HasOne(x => x.Position).WithMany(x => x.Players).HasForeignKey(x => x.PositionId);
-            modelBuilder.Entity<Player>().HasMany(x => x.PlayersStatistics).WithOne(x => x.Player).HasForeignKey(x => x.PlayerId);
+            modelBuilder.Entity<Player>().HasMany(x => x.PlayerStatistics).WithOne(x => x.Player).HasForeignKey(x => x.PlayerId);
 
             modelBuilder.Entity<Position>().HasMany(x => x.Players).WithOne(x => x.Position).HasForeignKey(x => x.PositionId);
 

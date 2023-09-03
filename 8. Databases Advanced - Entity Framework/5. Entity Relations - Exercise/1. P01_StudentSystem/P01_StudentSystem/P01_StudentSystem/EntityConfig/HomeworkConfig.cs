@@ -13,8 +13,8 @@ namespace P01_StudentSystem.EntityConfig
         {
             builder.HasKey(x => x.HomeworkId);
             builder.Property(x => x.Content).IsUnicode(false);
-            builder.HasOne(x => x.Course).WithMany(x => x.Homeworks).HasForeignKey(x => x.CourseId);
-            builder.HasOne(x => x.Student).WithMany(x => x.Homeworks).HasForeignKey(x => x.StudentId);
+            builder.HasOne(x => x.Course).WithMany(x => x.HomeworkSubmissions).HasForeignKey(x => x.CourseId);
+            builder.HasOne(x => x.Student).WithMany(x => x.HomeworkSubmissions).HasForeignKey(x => x.StudentId);
 
             builder.HasData(new Homework { Content = "Content", ContentType = ContentType.Pdf, CourseId = 1, 
                 HomeworkId = 1, StudentId = 1, SubmissionTime = DateTime.Now });

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace P02_FootballBetting.Data.Models
+namespace P03_FootballBetting.Data.Models
 {
     public class Game
     {
@@ -20,6 +20,6 @@ namespace P02_FootballBetting.Data.Models
         public string Result { get; set; }
 
         public ICollection<Bet> Bets { get; set; }
-        public ICollection<PlayerStatistic> PlayersStatistics { get; set; }
+        public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
     }
 }

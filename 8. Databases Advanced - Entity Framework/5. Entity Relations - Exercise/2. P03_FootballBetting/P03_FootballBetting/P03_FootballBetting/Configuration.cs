@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace P02_FootballBetting
+namespace P03_FootballBetting
 {
     public class Configuration
     {

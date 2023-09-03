@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace P02_FootballBetting.Data.Models
+namespace P03_FootballBetting.Data.Models
 {
     public class PlayerStatistic
     {
