@@ -36,6 +36,13 @@ namespace BusTicketsSystem.Client
             serviceCollection.AddAutoMapper(cfg => cfg.AddProfile<BusTicketsSystemProfile>());
 
             serviceCollection.AddTransient<ICommandInterpreter, CommandInterpreter>();
+            serviceCollection.AddTransient<Initializer.Initializer, Initializer.Initializer>();
+            serviceCollection.AddTransient<IBusStationService, BusStationService>();
+            serviceCollection.AddTransient<ITicketService, TicketService>();
+            serviceCollection.AddTransient<ICustomerService, CustomerService>();
+            serviceCollection.AddTransient<ITripService, TripService>();
+            serviceCollection.AddTransient<IBusCompanyService, BusCompanyService>();
+            serviceCollection.AddTransient<IReviewService, ReviewService>();
 
             //Add services to the serviceCollection
             serviceCollection.AddTransient<IDatabaseInitializerService, DatabaseInitializerService>();

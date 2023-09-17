@@ -1,4 +1,5 @@
 ﻿using BusTicketsSystem.Client.Core.Contracts;
+using BusTicketsSystem.Initializer;
 using BusTicketsSystem.Services.Contracts;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,7 +21,11 @@ namespace BusTicketsSystem.Client.Core
             var initializeService = this.serviceProvider.GetService<IDatabaseInitializerService>();
             initializeService.InitializeDatabase();
 
+            var seedData = serviceProvider.GetService<Initializer.Initializer>();
+
             var commandInterpreter = this.serviceProvider.GetService<ICommandInterpreter>();
+
+            seedData.Seed();
 
             while (true)
             {

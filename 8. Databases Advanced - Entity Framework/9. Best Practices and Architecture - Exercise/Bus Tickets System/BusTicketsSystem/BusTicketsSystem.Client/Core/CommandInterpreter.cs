@@ -16,7 +16,7 @@ namespace BusTicketsSystem.Client.Core
 
         public string Read(string[] input)
         {
-            string inputCommand = input[0] + "Command";
+            string inputCommand = GetName(input[0]) + "Command";
 
             string[] args = input.Skip(1).ToArray();
 
@@ -42,6 +42,20 @@ namespace BusTicketsSystem.Client.Core
             var command = (ICommand)constructor.Invoke(service);
 
             string result = command.Execute(args);
+
+            return result;
+        }
+
+        private string GetName(string name)
+        {
+            string result = string.Empty;
+
+            var tokens = name.Split("-");
+
+            for (int i = 0; i < tokens.Length; i++)
+            {
+                result += tokens[i][0].ToString().ToUpper() + string.Join("", tokens[i].Skip(1).ToArray());
+            }
 
             return result;
         }

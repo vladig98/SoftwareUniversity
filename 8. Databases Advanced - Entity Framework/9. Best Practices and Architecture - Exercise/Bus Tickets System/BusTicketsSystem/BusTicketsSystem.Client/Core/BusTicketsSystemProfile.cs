@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using BusTicketsSystem.Client.Core.Dtos;
+using BusTicketsSystem.Models;
 
 namespace BusTicketsSystem.Client.Core
 {
@@ -6,30 +8,25 @@ namespace BusTicketsSystem.Client.Core
     {
         public BusTicketsSystemProfile()
         {
-            //CreateMap<User, User>();
-            //CreateMap<Town, Town>();
-            //CreateMap<Tag, Tag>();
-            //CreateMap<Album, Album>();
-            //CreateMap<Picture, Picture>();
+            CreateMap<BankAccount, BankAccount>();
+            CreateMap<BusCompany, BusCompany>();
+            CreateMap<BusStation, BusStation>();
+            CreateMap<Customer, Customer>();
+            CreateMap<Review, Review>();
+            CreateMap<Ticket, Ticket>();
+            CreateMap<Town, Town>();
+            CreateMap<Trip, Trip>();
 
-            //CreateMap<Town, TownDto>().ReverseMap();
+            CreateMap<BusStation, BusStationDto>()
+                .ForMember(x => x.OriginTrips, y => y.MapFrom(z => z.OriginTrips))
+                .ForMember(x => x.DestinationTrips, y => y.MapFrom(z => z.DestinationTrips))
+                .ForMember(x => x.Town, y => y.MapFrom(z => z.Town))
+                .ReverseMap();
 
-            //CreateMap<Album, AlbumDto>().ReverseMap();
-
-            //CreateMap<Tag, TagDto>().ReverseMap();
-
-            //CreateMap<AlbumRole, AlbumRoleDto>()
-            //        .ForMember(dest => dest.AlbumName, from => from.MapFrom(p => p.Album.Name))
-            //        .ForMember(dest => dest.Username, from => from.MapFrom(p => p.User.Username))
-            //        .ReverseMap();
-
-            //CreateMap<User, UserFriendsDto>()
-            //    .ForMember(dto => dto.Friends,
-            //        opt => opt.MapFrom(u => u.FriendsAdded));
-
-            //CreateMap<Friendship, FriendDto>()
-            //    .ForMember(dto => dto.Username,
-            //        opt => opt.MapFrom(f => f.Friend.Username));
+            CreateMap<Customer, CustomerDto>().ReverseMap();
+            CreateMap<Trip, TripDto>().ReverseMap();
+            CreateMap<Review, ReviewDto>().ReverseMap();
+            CreateMap<BusCompany, BusCompanyDto>().ReverseMap();
         }
     }
 }
