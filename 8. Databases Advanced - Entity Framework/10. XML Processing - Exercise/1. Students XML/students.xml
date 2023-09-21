@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <name>Ivan Ivanov</name>
+    <gender>Male</gender>
+    <birthDate>1999/12/23</birthDate>
+    <phoneNumber>0000000000</phoneNumber>
+    <email>ivan.ivanov@abv.bg</email>
+    <university>SoftUni</university>
+    <speciality>C# Web Developer</speciality>
+    <facultyNumber>1234567898765</facultyNumber>
+    <exams>
+        <examName>Programming Basics</examName>
+        <dateTaken>2017/01/01</dateTaken>
+        <grade>6.0</grade>
+    </exams>
+</student>

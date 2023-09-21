@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <product name="TYLENOL COLD MULTI-SYMPTOM DAYTIME" price="1010.81" buyer="Amanda Frazier" />
+  <product name="SEPHORA Acne-Fighting Mattifying Moisturizer" price="1019.28" buyer="Christina Patterson" />
+  <product name="Acetaminophen, Chlorpheniramine Maleate, Dextromethorphan Hydrobromide, Phenylephrine Hydrochloride" price="1028.27" buyer="Billy Parker" />
+  <product name="Ringers" price="1054.37" buyer=" Mitchell" />
+  <product name="up and up temporary minor arthritis pain relief" price="1085.78" buyer="Patricia Cooper" />
+  <product name="XANTHIUM STRUMARIUM VAR CANADENSE POLLEN" price="1091.38" buyer="Brandon Fuller" />
+  <product name="Head and Shoulders Conditioner" price="1099.59" buyer=" Baker" />
+  <product name="Lorazepam" price="1134.96" buyer="Sarah Day" />
+  <product name="Pollens - Trees, Birch Mix" price="1153.54" buyer="Chris Mitchell" />
+  <product name="Baza Antifungal" price="1162.34" buyer="Christina Patterson" />
+  <product name="leader pain reliever" price="1179.79" buyer="Arthur Reynolds" />
+  <product name="Nighttime Sleep Aid" price="1217.11" buyer="Jacqueline Perez" />
+  <product name="Topical 60 Sec Sodium Fluoride" price="1228.84" buyer="Nicole Harris" />
+  <product name="Oxygen" price="1242.92" buyer="Clarence Fowler" />
+  <product name="Ondansetron" price="1249.76" buyer="Nicole Harris" />
+  <product name="XtraCare Foam Antibacterial Hand Wash" price="1251.97" buyer=" Mitchell" />
+  <product name="Topex" price="1258.49" buyer="Paula Hill" />
+  <product name="SUMATRIPTAN SUCCINATE" price="1265.94" buyer="Jennifer Riley" />
+  <product name="Prednisone" price="1285.99" buyer="Doris Cook" />
+  <product name="DIVALPROEX SODIUM" price="1287.03" buyer="Anna Parker" />
+  <product name="VITALUMIERE AQUA" price="1293.09" buyer="Patricia Fuller" />
+  <product name="Zonisamide" price="1305.41" buyer="Gary Stevens" />
+  <product name="Ibuprofen" price="1305.96" buyer="Gary Stevens" />
+  <product name="Hydralazine Hydrochloride" price="1309.72" buyer="Amanda Frazier" />
+  <product name="Fosphenytoin Sodium" price="1334.06" buyer="Benjamin Henry" />
+  <product name="Labetalol Hydrochloride" price="1345.11" buyer="Fred Allen" />
+  <product name="PCA SKIN ACNE" price="1356.22" buyer="Paula Hill" />
+  <product name="EMEND" price="1365.51" buyer="Amanda Frazier" />
+  <product name="Nevirapine" price="1374.72" buyer="Marie Williamson" />
+  <product name="Warfarin Sodium" price="1379.79" buyer=" Fox" />
+  <product name="Metoprolol Tartrate" price="1405.74" buyer="Carl Daniels" />
+  <product name="Etodolac" price="1443.13" buyer="Ann Stevens" />
+  <product name="smart sense nicotine" price="1444.12" buyer="Fred Barnes" />
+  <product name="Amitriptyline Hydrochloride" price="1453.96" buyer="Sarah Day" />
+  <product name="cough and sore throat" price="1482.68" buyer="Arthur Reynolds" />
+  <product name="Etoposide" price="1483.96" buyer="Gary Stevens" />
+</products>

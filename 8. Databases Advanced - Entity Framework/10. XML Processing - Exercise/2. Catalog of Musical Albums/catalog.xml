@@ -1,0 +1,28 @@
+<?hml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <album>
+        <name>The Marshall Mathers LP</name>
+        <artist>Eminem</artist>
+        <year>2000</year>
+        <producer>Dr Dre</producer>
+        <price>19.99</price>
+        <songs>
+            <song>
+                <title>Kill You</title>
+                <duration>4:24</duration>
+            </song>
+            <song>
+                <title>Stan</title>
+                <duration>6:44</duration>
+            </song>
+            <song>
+                <title>The Way I Am</title>
+                <duration>4:50</duration>
+            </song>
+            <song>
+                <title>The Real Slim Shady</title>
+                <duration>4:44</duration>
+            </song>
+        </songs>
+    </album>
+</catalog>
