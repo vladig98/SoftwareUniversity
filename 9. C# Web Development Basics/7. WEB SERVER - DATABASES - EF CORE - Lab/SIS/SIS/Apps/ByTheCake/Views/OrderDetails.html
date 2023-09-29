@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+</head>
+<body>
+    <a href="/">Back to Home</a>
+    <h1 style="margin-bottom: 20px; margin-top: 20px;">Order {{orderId}}</h1>
+    <table style="margin-bottom: 20px" border="1px solid black">
+        <thead>
+            <tr>
+                <th>
+                    Product Name
+                </th>
+                <th>
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{{
+            <tr>
+                <td>
+                    <a href="/cakeDetails/{{cakeId}}">{{productName}}</a>
+                </td>
+                <td>
+                    ${{productPrice}}
+                </td>
+            </tr>
+            }}}
+        </tbody>
+    </table>
+    <p><em>Created On: {{createdOn}}</em></p>
+</body>
+</html>

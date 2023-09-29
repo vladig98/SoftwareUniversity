@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cake</title>
+</head>
+<body>
+    <form method="post" action="/add">
+        <div style="margin-bottom: 20px;">
+            <span>Name: </span>
+            <input type="text" name="name" />
+        </div>
+        <div style="margin-bottom: 20px;">
+            <span>Price: </span>
+            <input type="number" name="price" step="0.01" />
+        </div>
+        <div style="margin-bottom: 20px;">
+            <span>Picture URL: </span>
+            <input type="text" name="pictureURL" />
+        </div>
+        <input type="submit" value="Add Cake" />
+    </form>
+</body>
+</html>

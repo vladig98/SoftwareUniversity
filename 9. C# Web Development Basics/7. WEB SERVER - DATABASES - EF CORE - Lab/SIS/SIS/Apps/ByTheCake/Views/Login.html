@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post" action="/login">
+        <div style="margin-bottom: 20px;">
+            <span>Username</span>
+            <input type="text" name="username" placeholder="Full Name" />
+        </div>
+        <div style="margin-bottom: 20px;">
+            <span>Password</span>
+            <input type="password" name="password" placeholder="Password" />
+        </div>
+        <input style="margin-bottom: 20px;" type="submit" value="Login" />
+    </form>
+    <div style="margin-bottom: 20px;">
+        <span>Don't have an account?</span>
+        <button onclick="location.href='/register'">Register</button>
+    </div>
+</body>
+</html>

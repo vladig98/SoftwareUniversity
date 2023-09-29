@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search cakes</title>
+</head>
+<body>
+    <a href="/">Back to home</a>
+    <form style="margin-bottom: 20px; margin-top: 20px" method="post" action="/search">
+        <div>
+            <input type="text" name="name" />
+            <input type="submit" value="Search" />
+        </div>
+    </form>
+    {{{
+    <div style="margin-bottom: 20px;">
+        <a href="/cakeDetails/{{cakeId}}">{{cakeName}}</a>
+        <span>${{cakePrice}}</span>
+        <button onclick="location.href='{{orderLink}}';">Order</button>
+    </div>
+    }}}
+</body>
+</html>
