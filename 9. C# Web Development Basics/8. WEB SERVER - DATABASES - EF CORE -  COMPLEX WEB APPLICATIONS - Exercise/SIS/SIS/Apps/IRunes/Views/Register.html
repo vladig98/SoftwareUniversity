@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <h1>IRunes</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/Users/Login">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="/Users/Register">
+                        Register
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <h1>Register</h1>
+        <form method="post" action="/Users/Register">
+            <div>
+                <span>Username</span>
+                <input type="text" name="username" placeholder="Username" />
+            </div>
+            <div>
+                <span>Password</span>
+                <input type="password" name="password" placeholder="Password" />
+            </div>
+            <div>
+                <span>Confirm Password</span>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" />
+            </div>
+            <div>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Email" />
+            </div>
+            <input type="submit" value="Register" />
+        </form>
+    </main>
+    <hr />
+    <footer>
+        Copyright &copy; Sanity Design Studios. All rights reserved.
+    </footer>
+</body>
+</html>

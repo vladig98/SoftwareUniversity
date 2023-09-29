@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1>IRunes</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/Albums/All">
+                        Albums
+                    </a>
+                </li>
+                <li>
+                    <a href="/Users/Logout">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <img src="{{src}}" width="200px" height="200px" />
+        <h4>Name: {{name}}</h4>
+        <h4>Price: ${{price}}</h4>
+        <br />
+        <br />
+        <h4>Tracks</h4>
+        <hr />
+        <a href="/Tracks/Create?albumId={{albumId}}">Create Track</a>
+        <hr />
+        <ul>
+            {{{
+            <li>
+                <b>{{index}}.</b> <a href="/Tracks/Details?albumId={{albumIdLink}}&trackId={{trackId}}">{{trackName}}</a>
+            </li>
+            }}}
+        </ul>
+        <hr />
+        <a href="/Albums/All">Back to All</a>
+    </main>
+    <hr />
+    <footer>
+        Copyright &copy; Sanity Design Studios. All rights reserved.
+    </footer>
+</body>
+</html>
