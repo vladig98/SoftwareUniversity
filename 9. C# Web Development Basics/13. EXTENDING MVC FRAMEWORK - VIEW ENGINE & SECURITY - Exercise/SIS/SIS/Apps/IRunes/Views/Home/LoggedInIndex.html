@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: var(--green)">
+            <a class="navbar-brand text-white" href="/">IRunes</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/Albums/All">
+                        Albums
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/Users/Logout">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr style="background: var(--green); height: 2px" />
+    <main class="p-5 text-white" style="background: var(--green)">
+        <h1>Welcome, <span style="color: var(--yellow)">{{name}}</span></h1>
+        <hr class="bg-white" style="height: 2px" />
+        <h1>IRunes wishes you a fun experience.</h1>
+    </main>
+    <hr style="background: var(--green); height: 2px" />
+    <footer class="text-center">
+        Copyright &copy; Sanity Design Studios. All rights reserved.
+    </footer>
+</body>
+</html>
