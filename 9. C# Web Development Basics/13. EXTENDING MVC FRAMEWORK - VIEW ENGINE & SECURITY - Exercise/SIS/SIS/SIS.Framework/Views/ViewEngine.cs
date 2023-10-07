@@ -15,14 +15,14 @@ namespace SIS.Framework.Views
         private const string ViewExtension = @"html";
         private const string ModelCollectionViewParameterPattern = @"\@Model\.Collection\.(\w+)\((.+)\)";
         private string ViewsFolderPath => $@"{ViewPathPreffix}\{MvcContext.Get.ViewsFolder}\";
-        private string ViewsSharedFolderPath => $@"{ViewsFolderPath}Shared\";
+        private string ViewsSharedFolderPath => $@"{ViewsFolderPath}Shared";
         private string ViewsDisplayTemplateFolderPath => $@"{ViewsSharedFolderPath}\DisplayTemplates\";
 
         private string FormatLayoutViewPath()
-            => $@"{ViewsFolderPath}{LayoutViewName}.{ViewExtension}";
+            => $@"{ViewsSharedFolderPath}\{LayoutViewName}.{ViewExtension}";
 
         private string FormatViewErrorPath()
-            => $@"{ViewsFolderPath}{ErrorViewName}.{ViewExtension}";
+            => $@"{ViewsSharedFolderPath}\{ErrorViewName}.{ViewExtension}";
 
         private string FormatViewPath(string controllerName, string actionName)
             => $@"{ViewsFolderPath}\{controllerName}\{actionName}.{ViewExtension}";
@@ -124,7 +124,22 @@ namespace SIS.Framework.Views
 
             if (viewData.ContainsKey("Error"))
             {
+                renderedHtml = GetErrorContent();
+
+                if (viewData.Count > 0)
+                {
+                    foreach (var parameter in viewData)
+                    {
+                        renderedHtml = RenderViewData(renderedHtml, parameter.Value, parameter.Key);
+                    }
+                }
+
                 renderedHtml = renderedHtml.Replace("@Error", viewData["Error"].ToString());
+                renderedHtml = renderedHtml.Replace("@RenderBody()", string.Empty);
+            }
+            else
+            {
+                renderedHtml = renderedHtml.Replace("@RenderError()", string.Empty);
             }
 
             return renderedHtml;

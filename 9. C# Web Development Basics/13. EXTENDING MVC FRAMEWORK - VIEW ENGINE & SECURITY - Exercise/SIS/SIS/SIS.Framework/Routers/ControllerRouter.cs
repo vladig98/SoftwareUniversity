@@ -4,6 +4,7 @@ using SIS.Framework.Attributes.Methods;
 using SIS.Framework.Controllers;
 using SIS.Framework.Services;
 using SIS.HTTP.Enums;
+using SIS.HTTP.Extensions;
 using SIS.HTTP.Requests;
 using SIS.HTTP.Responses;
 using SIS.WebServer.Api;
@@ -129,8 +130,8 @@ namespace SIS.Framework.Routers
             else
             {
                 var requestUrlSplit = request.URL.Split("/", StringSplitOptions.RemoveEmptyEntries);
-                controllerName = requestUrlSplit[0];
-                actionName = requestUrlSplit[1];
+                controllerName = requestUrlSplit[0].Capitalize();
+                actionName = requestUrlSplit[1].Capitalize();
             }
 
             controllerName += "Controller";

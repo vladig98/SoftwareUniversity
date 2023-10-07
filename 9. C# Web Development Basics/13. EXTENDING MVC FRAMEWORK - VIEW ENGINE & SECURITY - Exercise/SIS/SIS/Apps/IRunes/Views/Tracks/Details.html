@@ -1,0 +1,15 @@
+<main>
+    <div class="mx-auto w-50 text-center">
+        <h3>
+            Track Name: @Model.TrackName
+        </h3>
+        <h3>
+            Track Price: $@Model.TrackPrice
+        </h3>
+        <hr style="background: var(--green); height: 2px" />
+        <iframe class="w-100" style="aspect-ratio: 16/9" src="@Model.TrackVideoURL">
+        </iframe>
+        <hr style="background: var(--green); height: 2px" />
+        <a class="btn text-white" style="background: var(--green)" href="/Albums/Details/?id=@Model.AlbumId">Back to Album</a>
+    </div>
+</main>

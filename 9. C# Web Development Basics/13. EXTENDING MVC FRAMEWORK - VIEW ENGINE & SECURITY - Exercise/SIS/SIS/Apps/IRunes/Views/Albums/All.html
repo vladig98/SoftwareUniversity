@@ -1,0 +1,7 @@
+<main>
+    <h1>Albums</h1>
+    <hr style="background: var(--green); height: 2px" />
+    <a class="btn text-white" style="background: var(--green)" href="/Albums/Create/">Create Album</a>
+    <hr style="background: var(--green); height: 2px" />
+    @Model.Collection.Albums(@Item)
+</main>

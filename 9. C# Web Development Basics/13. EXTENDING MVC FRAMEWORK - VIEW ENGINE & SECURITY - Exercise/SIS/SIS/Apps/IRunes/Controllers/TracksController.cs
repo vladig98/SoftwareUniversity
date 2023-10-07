@@ -1,6 +1,10 @@
 ﻿using IRunes.Data;
 using IRunes.Models;
+using IRunes.ViewModels;
 using Microsoft.EntityFrameworkCore;
+using SIS.Framework.ActionResults;
+using SIS.Framework.Attributes.Methods;
+using SIS.Framework.Controllers;
 using SIS.HTTP.Enums;
 using SIS.HTTP.Requests;
 using SIS.HTTP.Responses;
@@ -12,118 +16,130 @@ using System.Web;
 
 namespace IRunes.Controllers
 {
-    public class TracksController
+    public class TracksController : BaseController
     {
-        private const string PathToViews = "../../../Views/";
         private readonly IRunesDbContext context;
 
-        public TracksController()
+        public TracksController(IRunesDbContext context)
         {
-            context = new IRunesDbContext();
+            this.context = context;
         }
 
-        public IHttpResponse Details(IHttpRequest request)
+        public IActionResult Details()
         {
-            if (!request.Cookies.ContainsCookie(".auth"))
+            if (Identity == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">You are not logged in.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "You are not logged in!";
+                return View();
             }
 
-            if (!request.QueryData.ContainsKey("albumId"))
+            if (!Request.QueryData.ContainsKey("albumId"))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
-            string albumId = request.QueryData["albumId"].ToString();
+            string albumId = Request.QueryData["albumId"].ToString();
 
             if (string.IsNullOrEmpty(albumId) || string.IsNullOrWhiteSpace(albumId))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
             var album = context.Albums.Include(x => x.Tracks).FirstOrDefault(x => x.Id == albumId);
 
             if (album == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
-            if (!request.QueryData.ContainsKey("trackId"))
+            if (!Request.QueryData.ContainsKey("trackId"))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
-            string trackId = request.QueryData["trackId"].ToString();
+            string trackId = Request.QueryData["trackId"].ToString();
 
             if (string.IsNullOrEmpty(trackId) || string.IsNullOrWhiteSpace(trackId))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
             var track = context.Tracks.FirstOrDefault(x => x.Id == trackId);
 
             if (track == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
             if (!album.Tracks.Any(x => x == track))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
-            string content = File.ReadAllText(PathToViews + "TrackDetails.html");
+            Model.Data["TrackName"] = track.Name;
+            Model.Data["TrackPrice"] = track.Price.ToString("F2");
+            Model.Data["TrackVideoURL"] = HttpUtility.UrlDecode(track.Link);
+            Model.Data["AlbumId"] = album.Id;
 
-            content = content.Replace("{{videoLink}}", HttpUtility.UrlDecode(track.Link));
-            content = content.Replace("{{name}}", track.Name);
-            content = content.Replace("{{price}}", track.Price.ToString("F2"));
-            content = content.Replace("{{albumIdBack}}", albumId);
-
-            return new HtmlResult(content, HttpResponseStatusCode.Ok);
+            return View();
         }
 
-        public IHttpResponse CreatePost(IHttpRequest request)
+        [HttpPost]
+        public IActionResult Create(TrackViewModel model)
         {
-            if (!request.Cookies.ContainsCookie(".auth"))
+            if (Identity == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">You are not logged in.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "You are not logged in!";
+                return View();
             }
 
-            if (!request.QueryData.ContainsKey("albumId"))
+            if (!Request.QueryData.ContainsKey("albumId"))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
-            string albumId = request.QueryData["albumId"].ToString();
+            string albumId = Request.QueryData["albumId"].ToString();
 
             if (string.IsNullOrEmpty(albumId) || string.IsNullOrWhiteSpace(albumId))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
             var album = context.Albums.Include(x => x.Tracks).FirstOrDefault(x => x.Id == albumId);
 
             if (album == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
-            string name = request.FormData["name"].ToString();
-            string link = request.FormData["link"].ToString();
-            string price = request.FormData["price"].ToString();
+            string name = model.name;
+            string link = model.link;
+            string price = model.price;
 
             if (string.IsNullOrEmpty(name) || string.IsNullOrWhiteSpace(name)
                 || string.IsNullOrEmpty(link) || string.IsNullOrWhiteSpace(link)
                 || string.IsNullOrEmpty(price) || string.IsNullOrWhiteSpace(price))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid data</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid data!";
+                return View();
             }
 
             var isPriceValid = decimal.TryParse(price, out decimal parsedPrice);
 
             if (!isPriceValid)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid data</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid data!";
+                return View();
             }
 
             Track track = new Track
@@ -138,41 +154,43 @@ namespace IRunes.Controllers
             context.Tracks.Add(track);
             context.SaveChanges();
 
-            return new RedirectResult("/Albums/Details?id=" + albumId);
+            return RedirectToAction("/Albums/Details/?id=" + albumId);
         }
 
-        public IHttpResponse Create(IHttpRequest request)
+        public IActionResult Create()
         {
-            if (!request.Cookies.ContainsCookie(".auth"))
+            if (Identity == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">You are not logged in.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "You are not logged in!";
+                return View();
             }
 
-            if (!request.QueryData.ContainsKey("albumId"))
+            if (!Request.QueryData.ContainsKey("albumId"))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
-            string albumId = request.QueryData["albumId"].ToString();
+            string albumId = Request.QueryData["albumId"].ToString();
 
             if (string.IsNullOrEmpty(albumId) || string.IsNullOrWhiteSpace(albumId))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
             var album = context.Albums.Include(x => x.Tracks).FirstOrDefault(x => x.Id == albumId);
 
             if (album == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid Id.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid id!";
+                return View();
             }
 
-            string content = File.ReadAllText(PathToViews + "CreateTrack.html");
+            Model.Data["AlbumId"] = album.Id;
+            Model.Data["IdBack"] = album.Id;
 
-            content = content.Replace("{{albumId}}", albumId);
-            content = content.Replace("{{albumIdBack}}", albumId);
-
-            return new HtmlResult(content, HttpResponseStatusCode.Ok);
+            return View();
         }
     }
 }

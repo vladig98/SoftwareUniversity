@@ -23,7 +23,7 @@ namespace SIS.Framework.Controllers
 
         public IHttpRequest Request { get; set; }
 
-        protected IViewable View([CallerMemberName] string actionName = "")
+        protected virtual IViewable View([CallerMemberName] string actionName = "")
         {
             string controllerName = ControllerUtilities.GetControllerName(this);
             //string fullyQualifiedName = ControllerUtilities.GetViewFullQualifiedName(controllerName, actionName);

@@ -1,0 +1,21 @@
+<main>
+    <div class="mx-auto w-50">
+        <h1>Create Album</h1>
+        <hr style="background: var(--green); height: 2px" />
+        <form method="post" action="/Albums/Create/">
+            <div>
+                <span class="m-2 col-form-label">Name</span>
+                <input class="m-2 form-control" type="text" name="name" placeholder="Name" />
+            </div>
+            <div>
+                <span class="m-2 col-form-label">Cover</span>
+                <input class="m-2 form-control" type="text" name="cover" placeholder="Cover" />
+            </div>
+            <hr style="background: var(--green); height: 2px" />
+            <div class="d-flex justify-content-around">
+                <input class="btn text-white" style="background: var(--green)" type="submit" value="Create" />
+                <a class="btn text-white" style="background: var(--green)" href="/Albums/All/">Back to All</a>
+            </div>
+        </form>
+    </div>
+</main>

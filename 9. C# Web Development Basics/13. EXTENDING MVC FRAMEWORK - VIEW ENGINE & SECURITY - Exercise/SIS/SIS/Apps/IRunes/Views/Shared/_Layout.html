@@ -7,11 +7,31 @@
     <script src="bootstrap.min.js"></script>
     <script src="jquery-3.7.1.min.js"></script>
     <script src="popper.min.js"></script>
-    <title>Home</title>
+    <title>IRunes</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: var(--green)">
+        <nav class="navbar navbar-expand-lg" style="background-color: var(--green); display: @Model.NavUnauth">
+            <a class="navbar-brand text-white" href="/">IRunes</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/Users/Login">
+                        Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/Users/Register">
+                        Register
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar navbar-expand-lg" style="background-color: var(--green); display: @Model.NavAuth">
             <a class="navbar-brand text-white" href="/">IRunes</a>
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -33,15 +53,8 @@
         </nav>
     </header>
     <hr style="background: var(--green); height: 2px" />
-    <main>
-        <h1>Albums</h1>
-        <hr style="background: var(--green); height: 2px" />
-        <a class="btn text-white" style="background: var(--green)" href="/Albums/Create">Create Album</a>
-        <hr style="background: var(--green); height: 2px" />
-        {{{
-        <a href="/Albums/Details?id={{albumId}}">{{albumName}}</a>
-        }}}
-    </main>
+    @RenderError()
+    @RenderBody()
     <hr style="background: var(--green); height: 2px" />
     <footer class="text-center">
         Copyright &copy; Sanity Design Studios. All rights reserved.

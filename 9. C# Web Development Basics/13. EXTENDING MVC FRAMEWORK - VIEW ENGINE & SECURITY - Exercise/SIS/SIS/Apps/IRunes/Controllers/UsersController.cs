@@ -1,12 +1,17 @@
 ﻿using IRunes.Data;
 using IRunes.Models;
 using IRunes.Services;
+using IRunes.ViewModels;
 using SIS.Framework.ActionResults;
 using SIS.Framework.Attributes.Action;
+using SIS.Framework.Attributes.Methods;
 using SIS.Framework.Controllers;
+using SIS.Framework.Models;
 using SIS.Framework.Security;
+using SIS.Framework.Views;
 using SIS.HTTP.Cookies;
 using SIS.HTTP.Enums;
+using SIS.HTTP.Exceptions;
 using SIS.HTTP.Requests;
 using SIS.HTTP.Responses;
 using SIS.WebServer.Results;
@@ -17,151 +22,138 @@ using System.Web;
 
 namespace IRunes.Controllers
 {
-    public class UsersController : Controller
+    public class UsersController : BaseController
     {
-        private const string PathToViews = "../../../Views/";
+        private IEncryptionService encryptionService;
         private readonly IRunesDbContext context;
 
-        private IEncryptionService encryptionService;
-
-        public UsersController(IEncryptionService encryptionService)
+        public UsersController(IRunesDbContext context, IEncryptionService encryptionService)
         {
+            this.context = context;
             this.encryptionService = encryptionService;
         }
 
-        public UsersController()
-        {
-            context = new IRunesDbContext();
-        }
-
-        //public IHttpResponse Login(IHttpRequest request)
-        //{
-        //    if (request.Cookies.ContainsCookie(".auth"))
-        //    {
-        //        return new HtmlResult("<h1 style=\"color: red;\">You are already logged in.</h1>", HttpResponseStatusCode.BadRequest);
-        //    }
-
-        //    string content = File.ReadAllText(PathToViews + "Login.html");
-
-        //    return new HtmlResult(content, HttpResponseStatusCode.Ok);
-        //}
-
         public IActionResult Login()
         {
-            SignIn(new IdentityUser { Username = "Vladi", Password = "123" });
+            if (Identity != null)
+            {
+                Model.Data["Error"] = "You are already logged in!";
+                return View();
+            }
 
             return View();
         }
 
-        [Authorize]
-        public IActionResult Authorized()
+        public IActionResult Register()
         {
-            Model["username"] = Identity.Username;
+            if (Identity != null)
+            {
+                Model.Data["Error"] = "You are already logged in!";
+                return View();
+            }
+
             return View();
         }
 
-        public IHttpResponse Register(IHttpRequest request)
+        [HttpPost]
+        public IActionResult Login(LoginViewModel model)
         {
-            if (request.Cookies.ContainsCookie(".auth"))
+            if (Identity != null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">You are already logged in.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "You are already logged in!";
+                return View();
             }
 
-            string content = File.ReadAllText(PathToViews + "Register.html");
-
-            return new HtmlResult(content, HttpResponseStatusCode.Ok);
-        }
-
-        public IHttpResponse LoginPost(IHttpRequest request)
-        {
-            if (request.Cookies.ContainsCookie(".auth"))
-            {
-                return new HtmlResult("<h1 style=\"color: red;\">You are already logged in.</h1>", HttpResponseStatusCode.BadRequest);
-            }
-
-            string username = request.FormData["username"].ToString();
-            string password = request.FormData["password"].ToString();
+            string username = model.username;
+            string password = model.password;
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrWhiteSpace(username)
                 || string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(password))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid data</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid data!";
+                return View();
             }
 
             var user = context.Users.FirstOrDefault(x => x.Username == username || x.Email == username);
 
             if (user == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">User does not exist</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "User does not exist!";
+                return View();
             }
 
             password = encryptionService.Encrypt(password);
 
             if (user.Password != password)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Bad Credentials</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Bad credentials!";
+                return View();
             }
 
-            var result = new SIS.WebServer.Results.RedirectResult("/");
+            SignIn(new IdentityUser
+            {
+                Username = username,
+                //Password = password,
+                Email = username
+            });
 
-            result.AddCookie(new HttpCookie(".auth", encryptionService.Encode(username)));
-
-            return result;
+            return RedirectToAction("/Home/Index");
         }
 
-        public IHttpResponse Logout(IHttpRequest request)
+        public IActionResult Logout()
         {
-            if (!request.Cookies.ContainsCookie(".auth"))
+            if (Identity == null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">You are not logged in.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "You need to log in first!";
+                return View();
             }
 
-            var response = new SIS.WebServer.Results.RedirectResult("/");
+            SignOut();
 
-            var cookie = request.Cookies.GetCookie(".auth");
-
-            cookie.Expire();
-
-            response.Cookies.Add(cookie);
-
-            return response;
+            return RedirectToAction("/Home/Index");
         }
 
-        public IHttpResponse RegisterPost(IHttpRequest request)
+        [HttpPost]
+        public IActionResult Register(RegisterViewModel model)
         {
-            if (request.Cookies.ContainsCookie(".auth"))
+            if (Identity != null)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">You are already logged in.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "You are already logged in!";
+                return View();
             }
 
-            string username = request.FormData["username"].ToString();
-            string password = request.FormData["password"].ToString();
-            string confirmPassword = request.FormData["confirmPassword"].ToString();
-            string email = request.FormData["email"].ToString();
+            string username = model.username;
+            string password = model.password;
+            string confirmPassword = model.confirmPassword;
+            string email = model.email;
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrWhiteSpace(username)
                 || string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(password)
                 || string.IsNullOrEmpty(confirmPassword) || string.IsNullOrWhiteSpace(confirmPassword)
                 || string.IsNullOrEmpty(email) || string.IsNullOrWhiteSpace(email))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid data</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid data!";
+                return View();
             }
 
             email = HttpUtility.UrlDecode(email);
 
             if (!email.Contains("@"))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Invalid data</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Invalid data!";
+                return View();
             }
 
             if (context.Users.Any(x => x.Username == username || x.Email == email))
             {
-                return new HtmlResult("<h1 style=\"color: red;\">User already exists.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "User already exists!";
+                return View();
             }
 
             if (password != confirmPassword)
             {
-                return new HtmlResult("<h1 style=\"color: red;\">Passwords do not match.</h1>", HttpResponseStatusCode.BadRequest);
+                Model.Data["Error"] = "Passwords do not match!";
+                return View();
             }
 
             password = encryptionService.Encrypt(password);
@@ -179,9 +171,13 @@ namespace IRunes.Controllers
             context.Users.Add(user);
             context.SaveChanges();
 
-            response.AddCookie(new HttpCookie(".auth", encryptionService.Encode(username)));
+            SignIn(new IdentityUser
+            {
+                Email = email,
+                Username = username
+            });
 
-            return response;
+            return RedirectToAction("/Home/Index");
         }
     }
 }

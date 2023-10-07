@@ -1,0 +1,22 @@
+<main>
+    <div class="row">
+        <div class="text-center col-3">
+            <img src="@Model.AlbumPhotoURL" style="width: inherit; height: 300px" />
+            <h4>Album Name: @Model.AlbumName</h4>
+            <h4>Album Price: $@Model.AlbumPrice</h4>
+            <div class="d-flex justify-content-between">
+                <a class="btn text-white" style="background: var(--green)" href="/Tracks/Create/?albumId=@Model.AlbumId">Create Track</a>
+                <a class="btn text-white" style="background: var(--green)" href="/Albums/All/">Back to All</a>
+            </div>
+        </div>
+        <div class="col-3">
+
+        </div>
+        <div class="col-6">
+            <h4>Tracks</h4>
+            <ul>
+                @Model.Collection.Tracks(@Item)
+            </ul>
+        </div>
+    </div>
+</main>
