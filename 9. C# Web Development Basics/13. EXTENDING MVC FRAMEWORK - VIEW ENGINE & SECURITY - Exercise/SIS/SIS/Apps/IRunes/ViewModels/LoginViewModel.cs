@@ -1,6 +1,4 @@
-﻿using SIS.Framework.Models;
-
-namespace IRunes.ViewModels
+﻿namespace IRunes.ViewModels
 {
     public class LoginViewModel
     {

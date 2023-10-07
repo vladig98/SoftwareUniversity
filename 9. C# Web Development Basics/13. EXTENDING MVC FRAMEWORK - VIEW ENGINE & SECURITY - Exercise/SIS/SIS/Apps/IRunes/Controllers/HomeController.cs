@@ -1,10 +1,9 @@
 ﻿using SIS.Framework.ActionResults;
-using SIS.Framework.Controllers;
 
 namespace IRunes.Controllers
 {
     public class HomeController : BaseController
-    { 
+    {
         public IActionResult Index()
         {
             if (Identity != null)
@@ -18,7 +17,7 @@ namespace IRunes.Controllers
                 Model["Auth"] = "none";
                 Model["Unauth"] = "block";
             }
-            
+
             return View();
         }
     }
