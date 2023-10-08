@@ -1,0 +1,57 @@
+﻿@using PANDA.DbModels;
+@using PANDA.DbModels.Enums;
+@using System.Globalization;
+@{
+    ViewData["Title"] = "Details";
+}
+@model Package
+
+<div class="text-center">
+    <h1 class="text-center">Package Details</h1>
+    <hr class="border border-dark border-2 opacity-100" />
+    <div class="row">
+        <div class="col">
+            <h2>Address</h2>
+            <h3>@Model.ShippingAddress</h3>
+        </div>
+        <div class="col">
+            <h2>Status</h2>
+            <h3>@Model.Status</h3>
+        </div>
+        <div class="col">
+            <h2>Estimated Delivery Date</h2>
+            <h3>
+                @if (Model.Status == Status.Shipped)
+                {
+                    @Model.EstimatedDeliveryDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+                }
+                else if (Model.Status == Status.Pending)
+                {
+                    @:N/A
+                }
+                else
+                {
+                    @:Delivered
+                }
+            </h3>
+        </div>
+        <hr class="border border-dark border-2 opacity-100" />
+        <div class="row">
+            <div class="col">
+                <h2>Weight</h2>
+                <h3>@Model.Weight KG</h3>
+            </div>
+            <div class="col">
+                <h2>Recipient</h2>
+                <h3>@Model.Recipient.UserName</h3>
+            </div>
+        </div>
+        <hr class="border border-dark border-2 opacity-100 w-75 mx-auto" />
+        <div class="row">
+            <div class="col">
+                <h2>Description</h2>
+                <h3>@Model.Description</h3>
+            </div>
+        </div>
+    </div>
+</div>

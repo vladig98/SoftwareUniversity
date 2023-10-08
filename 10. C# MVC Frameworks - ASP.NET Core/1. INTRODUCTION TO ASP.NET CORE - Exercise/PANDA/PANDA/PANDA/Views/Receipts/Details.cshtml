@@ -1,0 +1,44 @@
+﻿@using PANDA.DbModels;
+@{
+    ViewData["Title"] = "Receipt Details";
+}
+@model Receipt
+
+<div>
+    <h1 class="text-center">Receipt Details</h1>
+    <hr class="border border-dark border-2 opacity-100" />
+    <div class="row">
+        <h2 class="col">Receipt Number:</h2>
+        <h2 class="col text-end">@Model.Id</h2>
+    </div>
+    <hr class="border border-dark border-2 opacity-100" />
+    <div>
+        <div class="row">
+            <h3 class="col">Issued On:</h3>
+            <h3 class="col text-end">@Model.IssuedOn</h3>
+        </div>
+        <div class="row">
+            <h3 class="col">Delivery Address:</h3>
+            <h3 class="col text-end">@Model.Package.ShippingAddress</h3>
+        </div>
+    </div>
+    <hr class="border border-dark border-2 opacity-100" />
+    <div>
+        <div class="row">
+            <h3 class="col">Package Weight (KG):</h3>
+            <h3 class="col text-end">@Model.Package.Weight</h3>
+        </div>
+        <div class="row">
+            <h3 class="col">Package Description:</h3>
+            <h3 class="col text-end">@Model.Package.Description</h3>
+        </div>
+        <div class="row">
+            <h3 class="col">Recipient</h3>
+            <h3 class="col text-end">@Model.Recipient.UserName</h3>
+        </div>
+    </div>
+    <hr class="border border-dark border-2 opacity-100" />
+    <h3 class="text-end">
+        Total: $@Model.Fee
+    </h3>
+</div>

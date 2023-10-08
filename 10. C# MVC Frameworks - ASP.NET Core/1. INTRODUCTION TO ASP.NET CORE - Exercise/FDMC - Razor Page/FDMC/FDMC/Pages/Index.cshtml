@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Fluffy Duffy Munchkin Cats</h1>
+    @if (Model.Cats != null)
+    {
+        <ul class="my-5 p-0" style="list-style-type: none">
+            @foreach (var cat in Model.Cats)
+            {
+                <li>
+                    <a asp-page="/Cat" asp-route-id="@cat.Id">@cat.Name</a>
+                </li>
+            }
+        </ul>
+    }
+    <a class="btn btn-primary" href="/cats/add">Add Cat</a>
+</div>

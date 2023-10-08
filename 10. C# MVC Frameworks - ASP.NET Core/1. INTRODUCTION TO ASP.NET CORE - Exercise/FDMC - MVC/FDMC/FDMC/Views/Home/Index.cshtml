@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Fluffy Duffy Munchkin Cats</h1>
+    @if (Model != null)
+    {
+        <ul class="my-5 p-0" style="list-style-type: none">
+            @foreach (var cat in Model)
+            {
+                <li>
+                    <a asp-controller="Cats" asp-action="Details" asp-route-id="@cat.Id">@cat.Name</a>
+                </li>
+            }
+        </ul>
+    }
+    <a class="btn btn-primary" href="/Cats/Add">Add Cat</a>
+</div>

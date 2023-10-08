@@ -1,0 +1,65 @@
+﻿@using PANDA.DbModels;
+@using System.Globalization;
+@{
+    ViewData["Title"] = "Shipped Packages";
+}
+@model List<Package>
+
+<div>
+    <h1 class="text-center">
+        Shipped
+    </h1>
+    <hr class="border border-dark border-2 opacity-100" />
+    <table class="table table-bordered text-center">
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Weight
+                </th>
+                <th>
+                    Estimated Delivery Date
+                </th>
+                <th>
+                    Recipient
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody class="align-middle">
+            @if (Model.Any())
+            {
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @(i + 1)
+                        </td>
+                        <td>
+                            @Model.ElementAt(i).Description
+                        </td>
+                        <td>
+                            @Model.ElementAt(i).Weight KG
+                        </td>
+                        <td>
+                            @Model.ElementAt(i).EstimatedDeliveryDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
+                        </td>
+                        <td>
+                            @Model.ElementAt(i).Recipient.UserName
+                        </td>
+                        <td>
+                            <a class="btn btn-dark" asp-controller="Packages" asp-action="Deliver" asp-route-id="@Model.ElementAt(i).Id">Deliver</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

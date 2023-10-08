@@ -1,0 +1,48 @@
+﻿@using PANDA.DbModels;
+@{
+    ViewData["Title"] = "Create Package";
+}
+@model List<User>
+
+<div class="w-50 mx-auto">
+    <h1 class="text-center">Create Package</h1>
+    <hr class="border border-dark border-2 opacity-100"  />
+    <form method="post" asp-controller="Packages" asp-action="Create">
+        <div>
+            <label class="form-label">Description</label>
+            <input class="form-control" type="text" name="description" placeholder="Description..." />
+        </div>
+        <div class="row mt-3">
+            <div class="col me-5">
+                <label class="form-label">Weight</label>
+                <input class="form-control" type="number" name="weight" placeholder="Weight..." min="0.01" step="0.01" />
+            </div>
+            <div class="col ms-5">
+                <label class="form-label">Shipping Address</label>
+                <input class="form-control" type="text" name="shippingAddress" placeholder="Shipping Address..." />
+            </div>
+        </div>
+        <hr class="border border-dark border-2 opacity-100"  />
+        <div class="w-50 mx-auto text-center">
+            <label class="form-label">Recipient</label>
+            <select name="recipient" class="form-select">
+                <option selected hidden disabled>
+                    -- Choose Recipient --
+                </option>
+                @if (Model.Any())
+                {
+                    @foreach (var user in Model)
+                    {
+                        <option value="@user.UserName">
+                            @user.UserName
+                        </option>
+                    }
+                }
+            </select>
+        </div>
+        <hr class="border border-dark border-2 opacity-100"  />
+        <div class="text-center">
+            <input class="btn btn-dark" type="submit" value="Create" />
+        </div>
+    </form>
+</div>

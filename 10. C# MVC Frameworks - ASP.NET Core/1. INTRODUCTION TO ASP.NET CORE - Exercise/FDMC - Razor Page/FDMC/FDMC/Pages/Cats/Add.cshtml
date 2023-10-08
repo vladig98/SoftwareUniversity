@@ -1,0 +1,30 @@
+﻿@page
+@model FDMC.Pages.Cats.AddModel
+@{
+    ViewData["Title"] = "Add Cat";
+}
+
+<div class="mx-auto w-50">
+    <h1 class="text-center">Add Cat</h1>
+    <form method="post">
+        <div class="mb-3">
+            <span class="form-label">Cat Name</span>
+            <input class="form-control"  asp-for="Cat!.Name" placeholder="Cat Name" />
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Cat Age</span>
+            <input class="form-control"  asp-for="Cat!.Age" min="1" max="99" step="1" placeholder="Cat Age" />
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Cat Breed</span>
+            <input class="form-control"  asp-for="Cat!.Breed" placeholder="Cat Breed" />
+        </div>
+        <div class="mb-3">
+            <span class="form-label">Cat Image URL</span>
+            <input class="form-control"  asp-for="Cat!.ImageURL" placeholder="Cat Image URL" />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary w-100" type="submit" value="Add Cat" />
+        </div>
+    </form>
+</div>

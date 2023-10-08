@@ -1,0 +1,56 @@
+﻿@using PANDA.DbModels;
+@{
+    ViewData["Title"] = "Receipts";
+}
+@model List<Receipt>
+
+<div>
+    <h1 class="text-center">My Receipts</h1>
+    <hr class="border border-dark border-2 opacity-100" />
+    <table class="table table-bordered table-stripped text-center">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Fee
+                </th>
+                <th>
+                    Issued On
+                </th>
+                <th>
+                    Recipient
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody class="align-middle">
+            @if (Model.Any())
+            {
+                @foreach (var receipt in Model)
+                {
+                    <tr>
+                        <td>
+                            @receipt.Id
+                        </td>
+                        <td>
+                            $@receipt.Fee
+                        </td>
+                        <td>
+                            @receipt.IssuedOn
+                        </td>
+                        <td>
+                            @receipt.Recipient.UserName
+                        </td>
+                        <td>
+                            <a asp-controller="Receipts" asp-action="Details" asp-route-id="@receipt.Id" class="btn btn-dark">Details</a>
+                        </td>
+                    </tr>
+                }   
+            }
+        </tbody>
+    </table>
+</div>

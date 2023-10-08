@@ -1,0 +1,64 @@
+﻿@using PANDA.DbModels;
+@{
+    ViewData["Title"] = "Pending Packages";
+}
+@model List<Package>
+
+<div>
+    <h1 class="text-center">
+        Pending Shipment
+    </h1>
+    <hr class="border border-dark border-2 opacity-100" />
+    <table class="table table-bordered text-center">
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Weight
+                </th>
+                <th>
+                    Shipping Address
+                </th>
+                <th>
+                    Recipient
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody class="align-middle">
+            @if (Model.Any())
+            {
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            @(i + 1)
+                        </td>
+                        <td>
+                            @Model.ElementAt(i).Description
+                        </td>
+                        <td>
+                            @Model.ElementAt(i).Weight KG
+                        </td>
+                        <td>
+                            @Model.ElementAt(i).ShippingAddress
+                        </td>
+                        <td>
+                            @Model.ElementAt(i).Recipient.UserName
+                        </td>
+                        <td>
+                            <a class="btn btn-dark" asp-controller="Packages" asp-action="Ship" asp-route-id="@Model.ElementAt(i).Id">Ship</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,12 @@
+﻿@page "{id:int?}"
+@model FDMC.Pages.CatModel
+@{
+    ViewData["Title"] = "Cat Details";
+}
+
+<div>
+    <h1>@Model.Cat.Name</h1>
+    <img src="@Model.Cat.ImageURL" alt="@Model.Cat.Name" width="300px" />
+    <p class="fw-bold">Age: @Model.Cat.Age</p>
+    <p class="fw-bold">Breed: @Model.Cat.Breed</p>
+</div>
