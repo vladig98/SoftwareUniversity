@@ -1,0 +1,70 @@
+﻿@using CHUSHKA.DbModels.Enums;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CHUSHKA</title>
+    <link rel="stylesheet" href="~/css/reset-css.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg chushka-bg-color">
+                <a class="navbar-brand nav-link-white" href="/">CHUSHKA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white" asp-action="Index" asp-controller="Home">Home</a>
+                        </li>
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white" asp-action="Login" asp-controller="Users">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white" asp-action="Register" asp-controller="Users">Register</a>
+                            </li>
+                        }
+                        @if (User.IsInRole(Role.Admin.ToString()))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white" asp-action="Create" asp-controller="Products">Create Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white" asp-action="All" asp-controller="Orders">All Orders</a>
+                            </li>
+                        }
+                    </ul>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <ul class="navbar-nav left-side">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-white" asp-action="Logout" asp-controller="Users">Logout</a>
+                            </li>
+                        </ul>
+                    }
+                </div>
+            </nav>
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+        <footer>
+            <div class="container-fluid chushka-bg-color">
+                <div class="text-white p-2 text-center">&copy; CopyRight Sanity Web Design Studios 2018. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
