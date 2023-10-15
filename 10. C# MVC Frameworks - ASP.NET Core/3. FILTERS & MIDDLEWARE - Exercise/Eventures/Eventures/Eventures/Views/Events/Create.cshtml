@@ -1,0 +1,47 @@
+﻿@{
+     ViewData["Title"] = "Create Event";
+}
+@model EventViewModel
+
+<div class="w-50 mx-auto">
+    <h1 class="text-center">Create Event</h1>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <form method="post" asp-action="Create" asp-controller="Events">
+        <div class="row">
+            <div class="col text-center mt-2">
+                <label class="d-block fw-bold" asp-for="Name"></label>
+                <input class="w-100 p-1" asp-for="Name" />
+            </div>
+            <div class="col text-center mt-2">
+                <label class="d-block fw-bold" asp-for="Place"></label>
+                <input class="w-100 p-1" asp-for="Place" />
+            </div>
+        </div>
+        <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+        <div class="row">
+            <div class="col text-center mt-2">
+                <label class="d-block fw-bold" asp-for="Start"></label>
+                <input class="w-100 p-1" asp-for="Start" />
+            </div>
+            <div class="col text-center mt-2">
+                <label class="d-block fw-bold" asp-for="End"></label>
+                <input class="w-100 p-1" asp-for="End" />
+            </div>
+        </div>
+        <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+        <div class="row">
+            <div class="col text-center mt-2">
+                <label class="d-block fw-bold" asp-for="TotalTickets"></label>
+                <input class="w-100 p-1" asp-for="TotalTickets" />
+            </div>
+            <div class="col text-center mt-2">
+                <label class="d-block fw-bold" asp-for="PricePerTicket"></label>
+                <input class="w-100 p-1" asp-for="PricePerTicket" />
+            </div>
+        </div>
+        <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+        <div class="text-center">
+            <input class="btn text-dark" style="background: var(--bs-primary)" type="submit" value="Create Event" />
+        </div>
+    </form>
+</div>
