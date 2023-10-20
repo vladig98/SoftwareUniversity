@@ -1,0 +1,41 @@
+﻿@using Eventures.DbModels;
+@using System.Globalization;
+@{
+     ViewData["Title"] = "Events";
+}
+@model OrderViewModel
+
+<div>
+    <h1 class="text-center">All Events</h1>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <table class="table">
+        <thead>
+            <tr class="fw-bold">
+                <th>#</th>
+                <th>Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.EventuresEvents.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@Model.EventuresEvents.ElementAt(i).Name</td>
+                    <td>@Model.EventuresEvents.ElementAt(i).Start.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                    <td>@Model.EventuresEvents.ElementAt(i).End.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                    <td>
+                        <form method="post" asp-action="Order" asp-controller="Orders" asp-route-eventId="@Model.EventuresEvents.ElementAt(i).Id">
+                            <label class="fw-bold" asp-for="@Model.Tickets"></label>
+                            <input asp-for="@Model.Tickets" min="1" max="@Model.EventuresEvents.ElementAt(i).TotalTickets" />
+                            <input type="submit" value="Order" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+</div>

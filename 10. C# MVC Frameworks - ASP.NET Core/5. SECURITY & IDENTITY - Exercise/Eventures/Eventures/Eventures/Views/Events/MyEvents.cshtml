@@ -1,0 +1,35 @@
+﻿@using Eventures.DbModels;
+@using System.Globalization;
+@{
+     ViewData["Title"] = "Create Event";
+}
+@model List<Order>
+
+<div>
+    <h1 class="text-center">My Events</h1>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <table class="table">
+        <thead>
+            <tr class="fw-bold">
+                <th>#</th>
+                <th>Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Tickets</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@Model.ElementAt(i).EventuresEvent.Name</td>
+                    <td>@Model.ElementAt(i).EventuresEvent.Start.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                    <td>@Model.ElementAt(i).EventuresEvent.End.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                    <td>@Model.ElementAt(i).TicketsCount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+</div>
