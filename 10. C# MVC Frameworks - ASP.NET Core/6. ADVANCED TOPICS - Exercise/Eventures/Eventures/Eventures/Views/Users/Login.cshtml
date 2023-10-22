@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+@model LoginViewModel
+
+<div class="w-50 mx-auto">
+    <h1 class="text-center">Login</h1>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <form method="post" asp-action="Login" asp-controller="Users">
+        <div class="text-center mt-2">
+            <label class="d-block fw-bold" asp-for="UserName"></label>
+            <input class="w-100 p-1" asp-for="UserName" />
+        </div>
+        <div class="text-center mt-2">
+            <label class="d-block fw-bold" asp-for="Password"></label>
+            <input class="w-100 p-1" asp-for="Password" />
+        </div>
+        <div class="text-center mt-3">
+            <input hidden asp-for="@Model.ReturnUrl" />
+        </div>
+        <div class="text-center mt-3">
+            <input class="btn text-dark" style="background: var(--bs-primary)" type="submit" value="Login" />
+        </div>
+    </form>
+    <div class="text-center mt-4">
+        <a class="d-block nav-link" style="color: var(--bs-blue)" href="#">Forgot your password?</a>
+        <a class="d-block nav-link" style="color: var(--bs-blue)" asp-action="Register" asp-controller="Users">Register as a new user</a>
+    </div>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <div class="text-center">
+        <form asp-controller="Users" asp-action="ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div>
+                <p>
+                    @foreach (var provider in Model.ExternalLogins!)
+                    {
+                        <button type="submit" class="btn text-dark" style="background: var(--bs-primary)" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                    }
+                </p>
+            </div>
+        </form>
+    </div>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+</div>

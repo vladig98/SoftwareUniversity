@@ -1,0 +1,33 @@
+﻿@using Eventures.DbModels;
+@using System.Globalization;
+@{
+     ViewData["Title"] = "Orders";
+}
+@model List<Order>
+
+<div>
+    <h1 class="text-center">All Orders</h1>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <table class="table">
+        <thead>
+            <tr class="fw-bold">
+                <th>#</th>
+                <th>Event</th>
+                <th>Customer</th>
+                <th>Ordered On</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@Model.ElementAt(i).EventuresEvent.Name</td>
+                    <td>@Model.ElementAt(i).Customer.UserName</td>
+                    <td>@Model.ElementAt(i).OrderedOn.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+</div>
