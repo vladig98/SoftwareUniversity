@@ -1,0 +1,54 @@
+﻿@using Eventures.DbModels;
+@using System.Globalization;
+@{
+     ViewData["Title"] = "Events";
+}
+@model OrderViewModel
+
+<div>
+    <h1 class="text-center">All Events</h1>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <table class="table">
+        <thead>
+            <tr class="fw-bold">
+                <th>#</th>
+                <th>Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.EventuresEvents.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1 + ((Model.EventuresEvents.PageIndex - 1) * Model.EventuresEvents.ItemsPerPage))</td>
+                    <td>@Model.EventuresEvents.ElementAt(i).Name</td>
+                    <td>@Model.EventuresEvents.ElementAt(i).Start.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                    <td>@Model.EventuresEvents.ElementAt(i).End.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                    <td>
+                        <form method="post" asp-action="Order" asp-controller="Orders" asp-route-eventId="@Model.EventuresEvents.ElementAt(i).Id">
+                            <label class="fw-bold" asp-for="@Model.Tickets"></label>
+                            <input asp-for="@Model.Tickets" min="1" max="@Model.EventuresEvents.ElementAt(i).TotalTickets" />
+                            <input type="submit" value="Order" class="btn text-dark" style="background: var(--bs-primary)" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @{
+        var prevDisabled = !Model.EventuresEvents.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.EventuresEvents.HasNextPage ? "disabled" : "";
+    }
+
+    <a asp-action="All" asp-controller="Events" asp-route-pageNumber="@(Model.EventuresEvents.PageIndex - 1)" class="@prevDisabled btn text-dark" style="background: var(--bs-primary)">
+        Previous
+    </a>
+    <a asp-action="All" asp-route-pageNumber="@(Model.EventuresEvents.PageIndex + 1)" asp-controller="Events" class="@nextDisabled btn text-dark" style="background: var(--bs-primary)">
+        Next
+    </a>
+    
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+</div>

@@ -1,0 +1,51 @@
+﻿@using Eventures.DbModels;
+@using Eventures.Utilities;
+@{
+    ViewData["Title"] = "Administration";
+}
+@model PaginatedList<User>
+
+<div>
+    <h1 class="text-center">All Users</h1>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <table class="table">
+        <thead>
+            <tr class="fw-bold">
+                <th>#</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1 + ((Model.PageIndex - 1) * Model.ItemsPerPage))</td>
+                    <td>@Model.ElementAt(i).UserName</td>
+                    <td>@Model.ElementAt(i).Email</td>
+                    <td>@Model.ElementAt(i).Role.ToString()</td>
+                    <td>
+                        <a class="btn text-dark" style="background: var(--bs-primary)" asp-action="Promote" asp-controller="Users" asp-route-userId="@Model.ElementAt(i).Id">Promote</a>
+                        <a class="btn text-dark" style="background: var(--bs-primary)" asp-action="Demote" asp-controller="Users" asp-route-userId="@Model.ElementAt(i).Id">Demote</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    }
+
+    <a asp-action="Administration" asp-controller="Users" asp-route-pageNumber="@(Model.PageIndex - 1)" class="@prevDisabled btn text-dark" style="background: var(--bs-primary)">
+        Previous
+    </a>
+    <a asp-action="Administration" asp-route-pageNumber="@(Model.PageIndex + 1)" asp-controller="Users" class="@nextDisabled btn text-dark" style="background: var(--bs-primary)">
+        Next
+    </a>
+
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+</div>
