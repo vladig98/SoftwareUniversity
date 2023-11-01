@@ -1,0 +1,49 @@
+﻿@using Eventures.DbModels;
+@using System.Globalization;
+@using Eventures.Utilities;
+@{
+     ViewData["Title"] = "Create Event";
+}
+@model PaginatedList<Order>
+
+<div>
+    <h1 class="text-center">My Events</h1>
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+    <table class="table">
+        <thead>
+            <tr class="fw-bold">
+                <th>#</th>
+                <th>Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Tickets</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1 + ((Model.PageIndex - 1) * Model.ItemsPerPage))</td>
+                    <td>@Model.ElementAt(i).EventuresEvent.Name</td>
+                    <td>@Model.ElementAt(i).EventuresEvent.Start.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                    <td>@Model.ElementAt(i).EventuresEvent.End.ToString("dd-MMM-yyyy HH:mm:ss", CultureInfo.InvariantCulture)</td>
+                    <td>@Model.ElementAt(i).TicketsCount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    }
+
+    <a asp-action="MyEvents" asp-controller="Events" asp-route-pageNumber="@(Model.PageIndex - 1)" class="@prevDisabled btn text-dark" style="background: var(--bs-primary)">
+        Previous
+    </a>
+    <a asp-action="MyEvents" asp-route-pageNumber="@(Model.PageIndex + 1)" asp-controller="Events" class="@nextDisabled btn text-dark" style="background: var(--bs-primary)">
+        Next
+    </a>
+
+    <hr style="height: 3px; opacity: 100; background: var(--bs-primary); border: var(--bs-primary)" />
+</div>
