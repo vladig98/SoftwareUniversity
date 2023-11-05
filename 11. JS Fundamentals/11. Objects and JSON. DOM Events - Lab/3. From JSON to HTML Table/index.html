@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FromJSONToHTMLTable</title>
+    <style>
+        table,th{
+            border: groove;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+        }
+        td,th{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    </div>
+    <script>
+        function fromJSONToHTMLTable(input){
+            function escapeHtml(unsafe)
+            {
+                return unsafe.toString()
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;")
+                    .replace(/'/g, "&#039;");
+            }
+            
+            let arr = JSON.parse(input);
+
+            let keys = Object.keys(arr[0]);
+
+            let table = document.createElement('table');
+            let tr = document.createElement("tr");
+
+            for (let i = 0; i < keys.length; i++) {
+                let t = document.createElement("th");
+                t.innerHTML = escapeHtml(keys[i]);
+                tr.appendChild(t);
+            }
+
+            table.appendChild(tr);
+
+            for (let i = 0; i < arr.length; i++) {
+                let obj = arr[i];
+                let t = document.createElement("tr");
+
+                let values = Object.values(obj);
+                
+                for (let j = 0; j < values.length; j++) {
+                    let value = obj[keys[j]];
+
+                    let td = document.createElement("td");
+                    td.innerHTML = escapeHtml(value);
+                    t.appendChild(td);
+                }
+
+                table.appendChild(t);
+            }
+
+            console.log(table);
+            let div = document.createElement("div");
+            div.appendChild(table);
+            return div.innerHTML;
+        }
+        window.onload = function(){
+            let container = document.getElementById('wrapper');
+            container.innerHTML = fromJSONToHTMLTable(['[{"Name":"Tomatoes & Chips","Price":2.35},{"Name":"J&B Chocolate","Price":0.96}]']);
+            container.innerHTML += fromJSONToHTMLTable(['[{"Name":"Pesho <div>-a","Age":20,"City":"Sofia"},{"Name":"Gosho","Age":18,"City":"Plovdiv"},{"Name":"Angel","Age":18,"City":"Veliko Tarnovo"}]']);
+        };
+    </script>
+</body>
+</html>
