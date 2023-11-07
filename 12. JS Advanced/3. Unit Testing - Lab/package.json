@@ -1,0 +1,16 @@
+{
+  "name": "3.-unit-testing---lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'Tests/**/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
