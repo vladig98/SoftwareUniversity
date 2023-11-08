@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <input type="text" id="num1" />
+    <input type="text" id="num2" />
+    <input type="text" id="result" readonly />
+    <br>
+    <button id="sumButton" onclick="modifier.add()">
+        Sum</button>
+    <button id="subtractButton" onclick="modifier.subtract()">
+        Subtract</button>
+
+    <script src="solution.js"></script>
+    <script>
+        let modifier = solve();
+        modifier.init("#num1", "#num2", "#result")
+    </script>
+</body>
+
+</html>
