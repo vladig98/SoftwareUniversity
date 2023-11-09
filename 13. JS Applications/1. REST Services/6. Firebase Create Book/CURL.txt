@@ -1,0 +1,6 @@
+curl --location 'https://testapp-850ce.firebaseio.com/Books.json' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title": "New Title",
+    "author": "New Author"
+}'

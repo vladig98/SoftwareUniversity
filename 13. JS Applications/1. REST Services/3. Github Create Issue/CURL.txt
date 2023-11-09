@@ -1,0 +1,11 @@
+curl --location 'https://api.github.com/repos/testnakov/test-nakov-repo/issues' \
+--header 'Authorization: token {GITHUB_API_TOKEN}' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title": "I have created an issue",
+    "body": "Minor bug",
+    "labels": [
+        "bug",
+        "minor"
+    ]
+}'

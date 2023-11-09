@@ -1,0 +1,20 @@
+{
+    "_id": "654d34da749b1105025bc0e3",
+    "username": "guest",
+    "_kmd": {
+        "lmt": "2023-11-09T19:36:58.382Z",
+        "ect": "2023-11-09T19:36:58.382Z",
+        "llt": "2023-11-09T19:52:17.203Z",
+        "roles": [
+            {
+                "roleId": "6316e3b3-76cd-49ce-bbb3-08f9c4839cdb",
+                "grantedBy": "kid_ryIhE3q7p",
+                "grantDate": "2023-11-09T19:49:57.496Z"
+            }
+        ],
+        "authtoken": "{token}"
+    },
+    "_acl": {
+        "creator": "654d34da749b1105025bc0e3"
+    }
+}

@@ -1,0 +1,5 @@
+curl --location 'https://baas.kinvey.com/appdata/kid_ryIhE3q7p/Posts' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic {token}' \
+--data-urlencode 'title=New Title' \
+--data-urlencode 'body=New Post Body'

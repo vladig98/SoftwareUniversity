@@ -1,0 +1,2 @@
+curl --location 'https://baas.kinvey.com/appdata/kid_ryIhE3q7p' \
+--header 'Authorization: Basic {Token}'

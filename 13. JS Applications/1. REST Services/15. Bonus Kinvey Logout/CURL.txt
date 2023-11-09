@@ -1,0 +1,2 @@
+curl --location --request POST 'https://baas.kinvey.com/user/kid_ryIhE3q7p/_logout' \
+--header 'Authorization: Kinvey {token}'

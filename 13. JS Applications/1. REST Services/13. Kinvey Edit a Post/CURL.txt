@@ -1,0 +1,6 @@
+curl --location --request PUT 'https://baas.kinvey.com/appdata/kid_ryIhE3q7p/Posts/654d3593169eb706fd169aa2' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic {token}' \
+--data-urlencode 'title=Edited title' \
+--data-urlencode 'body=Edited author' \
+--data-urlencode 'hidden=true'

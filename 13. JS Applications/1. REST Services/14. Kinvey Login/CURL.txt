@@ -1,0 +1,7 @@
+curl --location 'https://baas.kinvey.com/user/kid_ryIhE3q7p/login' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic {token}' \
+--data '{
+    "username": "guest",
+    "password": "guest"
+}'

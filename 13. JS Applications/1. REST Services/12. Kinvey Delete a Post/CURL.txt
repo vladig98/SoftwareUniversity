@@ -1,0 +1,2 @@
+curl --location --request DELETE 'https://baas.kinvey.com/appdata/kid_ryIhE3q7p/Posts/654d36b217f7a50708ab583c' \
+--header 'Authorization: Basic {token}'

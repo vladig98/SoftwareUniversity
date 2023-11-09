@@ -1,0 +1,5 @@
+curl --location --request PUT 'https://testapp-850ce.firebaseio.com/Books/-Nioz6AJg3wZ3dJL9QCC/author/.json' \
+--header 'Content-Type: application/json' \
+--data '{
+    "author": "New author was assigned"
+}'
