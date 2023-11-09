@@ -1,0 +1,1 @@
+Start a local server or you will get blocked by CORS
