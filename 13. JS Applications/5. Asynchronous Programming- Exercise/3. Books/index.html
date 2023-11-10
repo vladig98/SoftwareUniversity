@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+        body {
+            font-family: "Open Sans", serif;
+        }
+
+        input[type=text] {
+            padding: 5px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Books</h1>
+    <button id="loadBtn">Load Books</button>
+    <button id="createBtn">Create Book</button>
+
+    <div id="inputBooks">
+        <label>Title</label>
+        <input type="text" id="title" />
+        <label>Author</label>
+        <input type="text" id="author" />
+        <label>ISBN</label>
+        <input type="text" id="isbn" />
+    </div>
+    <h2>All Books</h2>
+    <div id="books">
+    </div>
+
+    <script>
+        attachEvents();
+    </script>
+</body>
+
+</html>
