@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        div {
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer Details</legend>
+            <div>
+                <label for="firstName">
+                    First Name
+                </label>
+                <input id="firstName" autofocus type="text" placeholder="George" />
+            </div>
+            <div>
+                <label for="lastName">
+                    Last Name
+                </label>
+                <input id="lastName" type="text" placeholder="Devis" />
+            </div>
+            <div>
+                <label for="male">
+                    Male
+                </label>
+                <input id="male" type="radio" name="gender" />
+                <label for="female">
+                    Female
+                </label>
+                <input id="female" type="radio" name="gender" />
+                <label for="gender">
+                    Other
+                </label>
+                <input id="gender" type="radio" name="gender" />
+            </div>
+            <div>
+                <label for="emailCM">
+                    Preferred contact method:
+                    Email
+                </label>
+                <input id="emailCM" type="radio" name="contactMethod" />
+                <label for="phoneCM">
+                    Phone
+                </label>
+                <input id="phoneCM" type="radio" name="contactMethod" />
+            </div>
+            <div>
+                <label for="email">
+                    Email
+                </label>
+                <input id="email" type="email" placeholder="your@email.com" />
+            </div>
+            <div>
+                <label for="phone">
+                    Phone
+                </label>
+                <input id="phone" type="tel" placeholder="+359885236225" />
+            </div>
+            <div>
+                <label for="town">
+                    Town
+                </label>
+                <select id="town">
+                    <option>Varna</option>
+                    <option>Plovdiv</option>
+                    <option>Burgas</option>
+                    <option>Sofia</option>
+                    <option>Pleven</option>
+                </select>
+            </div>
+            <div>
+                <label for="age">
+                    Age
+                </label>
+                <input id="age" min="18" max="70" type="number" />
+            </div>
+            <div>
+                <label for="language">
+                    Programming language
+                </label>
+                <input list="languages" id="language">
+                <datalist id="languages">
+                    <option value="Java"></option>
+                    <option value="PHP"></option>
+                    <option value="C#"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Python"></option>
+                    <option value="Ruby"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </div>
+            <div>
+                <textarea rows="5" cols="20" placeholder="More information..."></textarea>
+            </div>
+            <div>
+                <input id="terms" checked type="checkbox" />
+                <label for="terms">
+                    I agree the Terms and Conditions
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Send" />
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
