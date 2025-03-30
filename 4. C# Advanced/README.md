@@ -1,75 +1,65 @@
-::: {#course-details-container .section}
-::: instance
-#### За курса {#за-курса .course-description-title}
+# 📚 C# Advanced Course - SoftUni
 
-<div>
+## 🧑‍🏫 About the Course  
 
-::: {#course-description-wrapper}
-::: {#course-description .course-description .collapsed style="display: block;"}
-Курсът \"C# Advanced\" надгражда уменията за работата с езика C# и .NET
-платформата, като в него се разглеждат по-сложни концепции, типични за
-езика. В курса ще се научите на създаване на линейни структури от данни,
-решаване на алгоритмични проблеми (problem solving skills), работа със
-стриймове, файлове и директории, създаване на шаблонни класове. Обръща
-се внимание на парадигмата функционално програмиране, както и на
-основния инструмент, залагащ на нея - LINQ за обработване на потоци от
-данни. Средата за разработка, която ще се използва от трейнърския екип е
-Microsoft Visual Studio 2019, но всеки курсист е свободен да използва
-инструменти по предпочитание.
-:::
-:::
+The **"C# Advanced"** course builds on the skills learned in the introductory **C#** course, diving deeper into more complex concepts and advanced features of the **C# language** and the **.NET framework**. The course focuses on the following areas:
 
-</div>
+- **Linear Data Structures**: Learn to work with advanced data structures to solve algorithmic problems efficiently.
+- **Problem Solving**: Sharpen your algorithmic thinking with a focus on solving practical problems using C#.
+- **Streams, Files, and Directories**: Work with streams for data handling, as well as files and directories for practical programming tasks.
+- **Generic Classes**: Learn to create and work with generic classes for increased code reusability and flexibility.
+- **Functional Programming**: Understand functional programming paradigms, with a focus on **LINQ** (Language Integrated Query) for working with data streams.
 
-::: {.section .instance-skills-section}
-::: {.section .instance-skills}
-## Умения, които ще придобиеш {#умения-които-ще-придобиеш .instance-skills-title}
+The development environment used in the course will be **Microsoft Visual Studio 2019**, although students are free to use their preferred tools.
 
--    Работа със стандартната библиотека на .NET платформата
--    Базово алгоритмично мислене
--    Използване на правилните структури от данни
--    Обръщане на внимание на бързодействието на кода
--    Поглед над граничните случаи
--    Работа с и обработка на низове
--    Основи на функционалното програмиране
-:::
-:::
+## 🛠️ Skills You'll Learn  
 
-::: {.section .instance-trainers-section}
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/57f0dc07-2f58-475e-894f-0227583f94f9){.instance-trainer-info-img}
+- **Working with the .NET Standard Library**: Gain in-depth knowledge of the .NET class library and its various tools  
+- **Algorithmic Thinking**: Develop problem-solving skills through algorithmic challenges  
+- **Data Structures**: Learn to use the right data structures to solve complex problems efficiently  
+- **Code Performance**: Focus on optimizing code performance, making sure that your solutions are fast and efficient  
+- **Edge Case Handling**: Learn to handle and test edge cases, ensuring that your programs work in all situations  
+- **String Manipulation**: Work with and process strings for text-based operations  
+- **Functional Programming**: Understand the principles of functional programming, with a special focus on **LINQ** for data processing  
 
-Явор Вълчев
+## 📅 Course Structure  
 
-Преподавател
-:::
+The **C# Advanced** course is structured around the following topics:
 
-Явор има над 10 годишен професионален опит в програмирането, като в
-момента е тиймлийд в Up2 Technology - българо-холандска компания, със
-солидна история в разработката и поддръжката на бизнес приложения.
-Завършил е ФМИ-СУ през 2007 година и се запалва по C# от курсовете на
-Светлин Наков във факултета. Занимава се предимно с back-end services,
-използвайки C# и MS SQL Server. Интересно му е да\... [виж
-още](#){.see-more}[ оптимизира бързодействието на софтуера, който пише
-във фирмата. В свободното си време обича да ходи на планина и да пътува.
-[скрий](#){.see-less}]{style="display:none;"}
+1. **Linear Data Structures**:  
+   - Learn about arrays, lists, stacks, queues, and other linear data structures  
+   - Understand how to implement and optimize them for real-world problems  
 
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/bccd1548-08c4-4bbe-965a-5a412583a75e){.instance-trainer-info-img}
+2. **Algorithmic Problem Solving**:  
+   - Solve algorithmic challenges with a focus on efficiency and correct usage of data structures  
+   - Improve your problem-solving mindset and ability to break down complex tasks into smaller, manageable problems  
 
-Божидар Данчев
+3. **Streams, Files, and Directories**:  
+   - Work with streams in C# for reading and writing data  
+   - Learn how to manage and manipulate files and directories in C#  
 
-Преподавател
-:::
+4. **Generic Classes**:  
+   - Understand the benefits of generic programming  
+   - Learn to write reusable and flexible code using generic classes and methods  
 
-Божидар от ранни години има силен интерес към технологиите и
-програмирането, но в гимназията отдава цялото си свободно време на
-професионалния спорт. През 2016 отново се разпалва страстта му и започва
-своето обучение като студент в Софтуерния Университет. Благодарение на
-топ резултати и силното си желание, бива поканен за асистиращ лектор
-през 2017. Интересите му включват смарт технологии, из\... [виж
-още](#){.see-more}[куствен интелект и гейминг.
-[скрий](#){.see-less}]{style="display:none;"}
-:::
-:::
-:::
+5. **Functional Programming and LINQ**:  
+   - Explore functional programming concepts such as immutability and pure functions  
+   - Use **LINQ** to query and manipulate data from different sources  
+
+## 🚀 Course Outcome  
+
+Upon completing the **"C# Advanced"** course, students will:
+
+- Be proficient in advanced C# programming concepts and techniques  
+- Have hands-on experience with solving algorithmic problems and applying them in real-world projects  
+- Understand and use complex data structures efficiently  
+- Be able to work with files, streams, and directories for data handling  
+- Have experience with functional programming principles, including the use of **LINQ** for querying and manipulating data  
+- Be able to optimize and improve code performance  
+- Gain skills in managing edge cases and testing for robustness in programs  
+
+---
+
+For further details, visit the [SoftUni C# Advanced Curriculum](https://softuni.bg/trainings/1841/csharp-advanced-january-2018).
+
+**🚀 Enhance your C# programming skills today at SoftUni!**

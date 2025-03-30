@@ -1,85 +1,71 @@
-::: {#course-details-container .section}
-::: instance
-#### За курса {#за-курса .course-description-title}
+# 📚 Object-Oriented Programming Course - SoftUni
 
-<div>
+## 🧑‍🏫 About the Course  
 
-::: {#course-description-wrapper}
-::: {#course-description .course-description .collapsed style="display: block;"}
-Курсът \"Object-Oriented Programming\" ще ви научи на **принципите на
-обектно-ориентираното програмиране** (ООП), как да работите с **класове
-и обекти**, как да ползвате обектно-ориентирано моделиране и да
-изграждате **йерархии от класове**. Ще се изучават основните принципи на
-ООП като **абстракция** (интерфейси, абстрактни класове),
-**енкапсулация**, **наследяване** и **полиморфизъм**. Ще обърнем
-внимание на парадигми като **event-driven програмиране**, **функционално
-програмиране** (ламбда функции, closures и LINQ), **обработка на
-изключения**. Ще разгледаме как се клонират, сравняват и обхождат
-обекти. Ще навлезем накратко в най-често използваните шаблони за дизайн
-(**design patterns**). Примерите, домашните и проектите ще са на езиците
-C#, Java и PHP.
+The **"Object-Oriented Programming" (OOP)** course is designed to teach the principles of object-oriented programming, focusing on how to work with classes, objects, and object-oriented modeling. The course covers key OOP concepts such as abstraction, encapsulation, inheritance, and polymorphism. You'll also explore paradigms like event-driven programming and functional programming (lambda functions, closures, LINQ), as well as exception handling.
 
-Оценяването в курса по ООП е на базата на предадени домашни, практически
-екипни проекти и практически изпит по ООП.
+In addition to these core concepts, you will learn how to clone, compare, and traverse objects. The course also introduces popular **design patterns**, which help in building scalable and maintainable software.
 
-[Курсът е част от цялостната програма
-с ]{style="text-align:justify;"}[**C#**](https://softuni.bg/professions/csharp){style="text-align:justify;"
-target="_blank"}**[ курсове и уроци за обучение по професия \"C#
-програмист\"](https://softuni.bg/professions/csharp){target="_blank"}**[ в
-Софтуерния университет.]{style="text-align:justify;"}
-:::
-:::
+The course features practical exercises, homework assignments, and projects using languages such as **C#**, **Java**, and **PHP**.
 
-</div>
+## 🛠️ Skills You'll Learn  
 
-::: {.section .instance-skills-section}
-::: {.section .instance-skills}
-## Умения, които ще придобиеш {#умения-които-ще-придобиеш .instance-skills-title}
+- **Working with Classes and Objects**: Learn how to freely create and use classes and objects in your programs  
+- **Encapsulation**: Understand how to encapsulate data and control access to it within objects  
+- **Class Hierarchies**: Learn how to design class hierarchies and organize objects in a structured way  
+- **Inheritance**: Master class inheritance, including how to extend and reuse code effectively  
+- **Multiple Inheritance**: Explore the concept of multiple inheritance and how to handle it in object-oriented languages  
+- **Event-driven Programming**: Understand the basics of event-driven programming and how events are handled  
+- **Functional Programming Concepts**: Learn about functional programming techniques like lambda functions, closures, and LINQ  
+- **Exception Handling**: Get comfortable with handling errors and exceptions in your code  
+- **Design Patterns**: Understand common design patterns to create clean and reusable code  
 
--    Свободно използване и създаване на класове и обекти
--    Разбиране и работа с капсулация на данни
--    Създаване на йерархия от класове
--    Наследяване на класове
--    Множествено наследяване
--    Разработване на практически проект
-:::
-:::
+## 📅 Course Structure  
 
-::: {.section .instance-trainers-section}
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/57f0dc07-2f58-475e-894f-0227583f94f9){.instance-trainer-info-img}
+The **Object-Oriented Programming** course is structured around the following core topics:
 
-Явор Вълчев
+1. **Introduction to OOP**:  
+   - Learn the fundamentals of OOP and its principles  
+   - Explore the relationship between objects and classes  
 
-Преподавател
-:::
+2. **Encapsulation**:  
+   - Understand data encapsulation and how to protect object data using access modifiers  
+   - Practice writing clean and maintainable code  
 
-Явор има над 10 годишен професионален опит в програмирането, като в
-момента е тиймлийд в Up2 Technology - българо-холандска компания, със
-солидна история в разработката и поддръжката на бизнес приложения.
-Завършил е ФМИ-СУ през 2007 година и се запалва по C# от курсовете на
-Светлин Наков във факултета. Занимава се предимно с back-end services,
-използвайки C# и MS SQL Server. Интересно му е да\... [виж
-още](#){.see-more}[ оптимизира бързодействието на софтуера, който пише
-във фирмата. В свободното си време обича да ходи на планина и да пътува.
-[скрий](#){.see-less}]{style="display:none;"}
+3. **Inheritance**:  
+   - Learn about class inheritance and how to extend functionality from base classes  
+   - Work with single and multiple inheritance in different programming languages  
 
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/bccd1548-08c4-4bbe-965a-5a412583a75e){.instance-trainer-info-img}
+4. **Polymorphism**:  
+   - Understand the concept of polymorphism and how it allows objects of different classes to be treated uniformly  
+   - Explore method overriding and overloading  
 
-Божидар Данчев
+5. **Functional Programming Techniques**:  
+   - Dive into lambda expressions, closures, and LINQ  
+   - Learn how functional programming fits into object-oriented designs  
 
-Преподавател
-:::
+6. **Object Cloning and Traversing**:  
+   - Learn how to clone objects and compare them  
+   - Understand how to traverse objects, especially within collections and hierarchies  
 
-Божидар от ранни години има силен интерес към технологиите и
-програмирането, но в гимназията отдава цялото си свободно време на
-професионалния спорт. През 2016 отново се разпалва страстта му и започва
-своето обучение като студент в Софтуерния Университет. Благодарение на
-топ резултати и силното си желание, бива поканен за асистиращ лектор
-през 2017. Интересите му включват смарт технологии, из\... [виж
-още](#){.see-more}[куствен интелект и гейминг.
-[скрий](#){.see-less}]{style="display:none;"}
-:::
-:::
-:::
+7. **Design Patterns**:  
+   - Study the most commonly used design patterns, including Singleton, Factory, and Observer patterns  
+   - Learn how to apply them in real-world projects  
+
+## 🚀 Course Outcome  
+
+Upon completing the **"Object-Oriented Programming"** course, students will:
+
+- Be proficient in working with object-oriented design concepts such as encapsulation, inheritance, and polymorphism  
+- Have hands-on experience with building class hierarchies and implementing design patterns  
+- Understand the importance of data encapsulation and be able to manage object data efficiently  
+- Be able to develop real-world applications using OOP principles  
+- Have knowledge of event-driven and functional programming concepts  
+- Be capable of handling exceptions and debugging issues effectively  
+- Develop practical projects in **C#**, **Java**, and **PHP**  
+
+---
+
+For further details, visit the [SoftUni Object-Oriented Programming Curriculum](https://softuni.bg/trainings/1842/csharp-oop-basics-february-2018).
+
+**🚀 Take your OOP skills to the next level at SoftUni!**

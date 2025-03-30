@@ -1,67 +1,61 @@
-::: {#course-details-container .section}
-::: instance
-#### За курса {#за-курса .course-description-title}
+# 📚 Entity Framework Core Course - SoftUni
 
-<div>
+## 🧑‍🏫 About the Course  
 
-::: {#course-description-wrapper}
-::: {#course-description .course-description .collapsed style="display: block;"}
-Курсът проследява в детайли работата с ORM технологията: Entity
-Framework Core (EF core), която е стандарт за ORM в C# и .NET Core
-приложения. EF Core позволява mapping между релационна база и
-обектно-ориентиран модел чрез подходите \"database first\" и \"code
-first\" и предоставя мощно обектно-ориентирано API за заявки към базата
-данни и извършване на CRUD операции. EF core предоставя както
-допълнително ниво на абстракция, така и лесен начин за обработка на
-данните от базата. В курса ще демонстрираме утвърдени практики при
-изграждане на database layer на сложни системи в C# приложения чрез
-вградени имплементации на шаблона Repository и използването на слой на
-услугите (Service Layer), както и импорт и експорт към различни формати
-за данни (JSON, XML).
-:::
-:::
+The **Entity Framework Core (EF Core)** course dives deep into the work with ORM technology, which is a standard for Object-Relational Mapping in C# and .NET Core applications. EF Core enables mapping between a relational database and an object-oriented model using both **"database first"** and **"code first"** approaches. It provides a powerful object-oriented API for querying databases and performing CRUD operations. EF Core offers an additional layer of abstraction and a simplified way of working with data in a database. 
 
-</div>
+This course demonstrates best practices for building a robust **database layer** for complex C# applications through built-in implementations of the **Repository pattern** and the **Service Layer**. The course also covers data import/export with various formats, including **JSON** and **XML**.
 
-::: {.section .instance-skills-section}
-::: {.section .instance-skills}
-## Умения, които ще придобиеш {#умения-които-ще-придобиеш .instance-skills-title}
+## 🛠️ Skills You'll Learn  
 
--    Изработване на дизайн на база данни
--    Използване на подходи за създаване на база данни Code First и
-    Database First
--    Работа с база данни посредством ORM работни рамки
--    Работа с различни формати данни - XML, JSON
-:::
-:::
+- **Database Design**: Learn how to design databases efficiently for C# applications  
+- **Code First & Database First Approaches**: Master both techniques for creating databases and managing schemas  
+- **ORM Frameworks**: Learn how to use EF Core to interact with relational databases seamlessly  
+- **Data Formats**: Gain skills to handle data import/export in **JSON** and **XML** formats  
 
-::: {.section .instance-trainers-section}
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/4d476eaf-0eb2-4561-995d-2b98f6b4978d){.instance-trainer-info-img}
+## 📅 Course Structure  
 
-Николай Христов
+The **Entity Framework Core** course covers the following key areas:
 
-Преподавател
-:::
+1. **Introduction to ORM**  
+   - Understand the concept of Object-Relational Mapping (ORM)  
+   - Learn why EF Core is the preferred ORM for C# and .NET Core applications  
 
-**Николай** се занимава с .NЕТ технологии от 5 години, като е изграждал
-архитектурата на многобройни уеб системи и в свободното си време
-експериментира със създаването на най-различни игри чрез Unity. В
-момента работи върху изграждане на иновативен начин на плащане в
-България, чрез компанията си IEnterprise.
+2. **Database Design**  
+   - Study effective database design patterns for C# applications  
+   - Learn how to structure your database for scalable and maintainable applications  
 
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/7fb90cd4-df95-4c73-9d9f-c4bbfe035db1){.instance-trainer-info-img}
+3. **Code First vs Database First**  
+   - Learn the difference between **Code First** and **Database First** approaches  
+   - Master how to generate the database schema using C# code or an existing database  
 
-Стоян Шопов
+4. **EF Core Basics**  
+   - Learn the core concepts of EF Core, including the **DbContext**, **DbSet**, and **Model Configuration**  
+   - Understand how EF Core translates your C# objects to relational tables  
 
-Преподавател
-:::
+5. **CRUD Operations**  
+   - Learn how to perform **Create**, **Read**, **Update**, and **Delete** operations with EF Core  
+   - Explore efficient querying and filtering techniques using LINQ  
 
-**Стоян** е топ студент в СофтУни. Има професионален опит в софтуерната
-разработка със C#. Изучава усилено C# програмата, а в свободното си
-време обича да се занимава с бизнес и личностно развитие. В свободното
-си време обича да бъде сред планината.
-:::
-:::
-:::
+6. **Repository & Service Layer Patterns**  
+   - Master the **Repository Pattern** for managing data access logic  
+   - Implement the **Service Layer** pattern to structure your application’s business logic  
+
+7. **Data Import/Export**  
+   - Learn to import and export data in **JSON** and **XML** formats using EF Core  
+
+## 🚀 Course Outcome  
+
+Upon completing the **Entity Framework Core** course, students will:
+
+- Be able to design and implement efficient database models for C# applications  
+- Understand and apply both **Code First** and **Database First** methodologies  
+- Be proficient in using EF Core for data operations and complex queries  
+- Be capable of implementing **Repository** and **Service Layer** patterns in their applications  
+- Have the ability to handle data exchange using common formats like **JSON** and **XML**  
+
+---
+
+For further details, visit the [SoftUni Entity Framework Course](https://softuni.bg/trainings/1972/databases-advanced-entity-framework-june-2018).
+
+**🚀 Master EF Core and elevate your database interaction skills for powerful, data-driven C# applications!**

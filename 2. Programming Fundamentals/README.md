@@ -1,17 +1,54 @@
-﻿#### **За курса**
-С "Programming Fundamentals" студентите започват да изучават вътрешната програма на SoftUni за цялостна подготовка на софтуерни инженери. Курсът разглежда фундаментални концепции в програмирането, които са основа за ефективното и качествено обучение в професионалните модули. Обучаващите се надграждат знанията, придобити в курса Programming Basics и започват да използват по-сложни похвати и структури от програмирането като: листове, речници, обекти и класове.
+﻿# 📚 Programming Fundamentals Course - SoftUni
 
-Изучават се допълнителни технологии, необходими на всеки един софтуерен разработчик, като HTML и CSS, HTTP, побитови операции и други. Разглеждат се основите на web разработката, както и един от най-разпространените технологии и инструменти, с което курсът успешно изгражда представа у студентите относно предстоящите професионални модули и знанията, които ще придобият от тях, за да станат успешни софтуерни разработчици.
-## **Умения, които ще придобиеш** 
-- Писане и извикване на методи 
-- Работа с масиви и списъци 
-- Работа с таблични данни (матрици) 
-- Работа с речници (dictionaries) 
-- Използване на lambda изрази и функционални парадигми 
-- Използване на LINQ заявки 
+## 🧑‍🏫 About the Course  
 
-Светлин Наков 
+The **"Programming Fundamentals"** course marks the beginning of SoftUni's comprehensive program for training **Software Engineers**. This course covers fundamental programming concepts that lay the foundation for effective and quality training in professional modules. It builds on the knowledge gained in the **Programming Basics** course and introduces students to more advanced programming techniques and structures such as:
 
-Преподавател 
+- Lists, Dictionaries, Objects, and Classes
+- Additional technologies required by every software developer, such as **HTML**, **CSS**, and **HTTP**
+- Bitwise operations
+- Foundations of web development
 
-**Светлин Наков** е вдъхновител на хиляди млади хора да се захванат с програмиране и софтуерни технологии. Като ученик и студент е победител в конкурси и олимпиади по информатика и състезателно програмиране, включително **4 медала** от международни олимпиади по информатика. Като студент работи като програмист и преподава програмиране в университети и софтуерни академии. По-късно ръководи екипи по разработка на софтуер и създава собствена софтуерна фирма и софтуерна академия. Наков има над 15-годишен опит като **софтуерен инженер**, ръководител на софтуерни проекти, консултант, **лектор** и предприемач с богат опит в .NET и Java EE платформите, информационни системи, бази данни, уеб разработка и софтуерно инженерство. Той е **автор на 7 книги** за компютърно програмиране и софтуерни технологии, C# и Java, както и на десетки технически и научни публикации. Светлин Наков има **докторска степен** в областта на компютърните науки, носител е на **Наградата “Джон Атанасов” на Президента** на България. През последните 10 години създава и задвижва с вдъхновение и всеотдайна работа **няколко школи за практическо обучение на софтуерни инженери**: Национална академия по разработка на софтуер (НАРС), Софтуерна академия на Телерик и Софтуерен университет (СофтУни). Бил е преподавател по програмиране и разработка на софтуер във **ФМИ на Софийски университет**, в **Технически университет - София** и в **Нов български университет (НБУ)**. Повече информация може да намерите в блога му: <http://www.nakov.com>.
+Students will also gain exposure to one of the most commonly used technologies and tools in the industry. By the end of the course, students will have a clearer understanding of the professional modules they will encounter, preparing them for a successful career as software developers.
+
+## 🛠️ Skills You'll Learn  
+
+- **Writing and Calling Methods**: Learn how to write and call functions to break down problems into manageable parts  
+- **Arrays and Lists**: Understand and implement data structures for efficient data management  
+- **Table Data (Matrices)**: Work with matrix-like data structures for multidimensional problem-solving  
+- **Dictionaries**: Manage key-value pairs with dictionaries for quick lookups  
+- **Lambda Expressions & Functional Paradigms**: Implement more compact and expressive code with lambda expressions  
+- **LINQ Queries**: Utilize **LINQ** (Language Integrated Query) to handle data queries efficiently in C#  
+
+## 📅 Course Structure  
+
+- **Duration**: Part of the SoftUni Software Engineering program  
+- **Format**: Hands-on exercises, practical coding sessions, and concept explanations  
+- **Next Step**: Prepares you for advanced software development topics  
+
+## 🚀 Prerequisites  
+
+- Completion of the **Programming Basics** course or equivalent introductory knowledge in programming.
+
+## 📈 Benefits  
+
+- Gain a solid foundation in data structures and essential tools for software development  
+- Learn fundamental concepts of web development with **HTML**, **CSS**, and **HTTP**  
+- Master key programming concepts such as methods, arrays, dictionaries, and LINQ queries  
+- Understand more complex programming techniques that form the basis of advanced software engineering  
+
+## 📝 Course Outcome  
+
+Upon completing the **"Programming Fundamentals"** course, you will:
+
+- Be able to write and call methods, organize data into arrays, lists, and dictionaries  
+- Understand the foundations of web development and HTTP protocols  
+- Have experience with advanced techniques such as **lambda expressions**, **LINQ queries**, and **bitwise operations**  
+
+This course sets the stage for more advanced programming topics and the professional modules that will follow in your journey to becoming a successful software developer.
+
+---
+
+For further details, visit the [SoftUni Programming Fundamentals Curriculum](https://softuni.bg/trainings/1712/programming-fundamentals-september-2017).
+
+**🚀 Start your journey to becoming a software engineer with SoftUni today!**

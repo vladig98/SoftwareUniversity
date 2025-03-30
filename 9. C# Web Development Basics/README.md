@@ -1,70 +1,60 @@
-::: {#course-details-container .section}
-::: instance
-#### За курса {#за-курса .course-description-title}
+# 📚 C# Web Basics Course - SoftUni
 
-<div>
+## 🧑‍🏫 About the Course  
 
-::: {#course-description-wrapper}
-::: {#course-description .course-description .collapsed style="display: block;"}
-В курса \"C# Web Basics\" се полагат основите на важни принципи заложени
-в ASP.NET Core. Ще ви запознаем с основни принципи на уеб разработката,
-като HTTP протокол, бисквитки и сесии. Ще напишем собствен сървър и
-собствен MVC Framework с поддръжка на всички базови функционалности,
-необходими за едно съвременно уеб приложение. Ще се научите да създавате
-собствени уеб приложения със C# и MS SQL Server с отделяне на модели,
-изгледи (views) и контролери.
-:::
-:::
+The **"C# Web Basics"** course lays the foundation for important principles in **ASP.NET Core**. In this course, you will learn the fundamentals of web development, such as the **HTTP protocol**, **cookies**, and **sessions**. You will write your own web server and create your own MVC Framework, supporting all the basic functionalities necessary for a modern web application. This course will teach you how to create web applications using **C#** and **MS SQL Server**, with a clear separation of models, views, and controllers.
 
-</div>
+## 🛠️ Skills You'll Learn  
 
-::: {.section .instance-skills-section}
-::: {.section .instance-skills}
-## Умения, които ще придобиеш {#умения-които-ще-придобиеш .instance-skills-title}
+- **Web Servers**: Learn how to work with web servers and their configuration  
+- **Content Creation & Styling**: Gain knowledge in creating and styling web content  
+- **State Management**: Master techniques for managing the state of a web application  
+- **Web Application Architecture**: Learn how to structure your web applications effectively  
+- **Building Web Applications**: Understand how to create web applications from scratch  
+- **MVC Architecture**: Gain mastery in the **Model-View-Controller** architecture pattern  
 
--    Работа с уеб сървъри
--    Познания по създаване и стилизиране на съдържание
--    Управление на състоянието
--    Създаване на архитектура на уеб приложение
--    Създаване на уеб приложения от нулата
--    Овладяване на архитектурния шаблон MVC
-:::
-:::
+## 📅 Course Structure  
 
-::: {.section .instance-overview-section}
-:::
+The **C# Web Basics** course covers the following key areas:
 
-::: {.section .instance-trainers-section}
-::: {.section .instance-trainer-info .instance-single-trainer-info .desktop}
-![](/users/profile/showavatar/84bf85a4-c37d-4891-b02d-9e4d898e27c4){.instance-trainer-info-img}
+1. **Introduction to Web Development**  
+   - Understand the basic principles of web development  
+   - Learn about **HTTP**, **cookies**, and **sessions**  
+   - Explore the structure of web applications and web servers  
 
-Николай Костов
+2. **Building a Web Server**  
+   - Learn how to create a custom web server using C#  
+   - Understand how HTTP requests and responses work on a low level  
 
-Преподавател
+3. **MVC Framework**  
+   - Build your own **MVC Framework** from scratch  
+   - Understand the Model-View-Controller (MVC) design pattern  
+   - Learn how to organize and separate application logic into models, views, and controllers  
 
-<div>
+4. **Web Application Architecture**  
+   - Learn how to design the architecture for web applications  
+   - Understand how to manage application flow and data with MVC  
 
-**Николай** работи като Solutions Architect във фирма ZenCodeo
-(http://zencodeo.com). Занимавал се е над 5 години с обученията в
-академията на Телерик, а сега води лекции в Софтуерния Университет
-(https://softuni.bg) и на различни конференции. Учил е във ФМИ и сега
-довършва магистратурата си в НБУ. Няколко години подред Ники е Microsoft
-Certified Trainer. Носител е на наградата \"Студент на годината\", както
-и е бил част от класацията \"30 под 30\" на списание Forbes Bulgaria.
-Николай е бивш дългогодишен участник в редица ученически и студентски
-олимпиади и състезания по информатика. Двукратен победител в проектните
-категории \"Приложни програми\" и \"Интернет приложения\" на
-националната олимпиадата по ИТ. Има богат опит в проектирането и
-изграждането на уеб приложения, алгоритмичното програмиране, сигурността
-и облачните технологии. Личният блог на Ники е достъпен на адрес:
-http://nikolay.it/.
+5. **State Management in Web Applications**  
+   - Master managing state with **cookies** and **sessions**  
+   - Learn how to handle user data efficiently  
 
-</div>
+6. **Using C# and MS SQL Server**  
+   - Understand how to connect to **MS SQL Server** for data storage  
+   - Learn how to create and manage a database for your web applications  
 
-<div>
+## 🚀 Course Outcome  
 
-</div>
-:::
-:::
-:::
-:::
+By the end of the **C# Web Basics** course, you will:
+
+- Be proficient in web development principles and the **HTTP** protocol  
+- Understand how to build a basic web server and create a custom MVC framework  
+- Be capable of creating your own **web applications** from scratch  
+- Master the **Model-View-Controller** (MVC) architecture  
+- Gain the skills necessary for creating web applications with **C#** and **MS SQL Server**
+
+---
+
+For further details, visit the [SoftUni C# Web Basics Course](https://softuni.bg/trainings/2086/csharp-web-development-basics-september-2018).
+
+**🚀 Learn the foundations of web development and create your first web applications from scratch!**

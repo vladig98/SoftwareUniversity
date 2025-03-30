@@ -1,79 +1,66 @@
-::: {#course-details-container .section}
-::: instance
-#### За курса {#за-курса .course-description-title}
+# 📚 Advanced Object-Oriented Programming Course - SoftUni
 
-<div>
+## 🧑‍🏫 About the Course  
 
-::: {#course-description-wrapper}
-::: {#course-description .course-description .collapsed style="display: block;"}
-В курса по обектно-ориентирано програмиране(ООП) ще се запознаете с
-принципите и добрите практики за изграждане на качествен софтуер. Ще се
-запознаете с концепциите за писане на качествен код при в ООП в езика
-C#. Това включва използване на абстракции, преработка на лош код
-(refactoring), както и писане на unit тестове, reflection, работа с
-шаблонни типове данни, използване на събития и техники, и инструменти за
-подобряване на качеството на кода. Курсът завършва с разработка и защита
-на практически курсов проект и практически изпит.
+The **Advanced Object-Oriented Programming (OOP)** course dives deeper into the principles and best practices for building high-quality software using C#. You will explore advanced OOP concepts, including abstraction, refactoring bad code, unit testing, reflection, working with generic data types, and using events and techniques to improve code quality. The course culminates in a practical project, where you will apply everything you’ve learned to create a real-world application.
 
-[Курсът е част от цялостната програма
-с ]{style="text-align:justify;"}[**C#**](https://softuni.bg/professions/csharp){style="text-align:justify;"
-target="_blank"}**[ курсове и уроци за обучение по професия \"C#
-програмист\"](https://softuni.bg/professions/csharp){target="_blank"}**[ в
-Софтуерния университет.]{style="text-align:justify;"}
-:::
-:::
+The course is part of the broader **C# Programmer** program at SoftUni, which provides comprehensive training for aspiring C# developers.
 
-</div>
+## 🛠️ Skills You'll Learn  
 
-::: {.section .instance-skills-section}
-::: {.section .instance-skills}
-## Умения, които ще придобиеш {#умения-които-ще-придобиеш .instance-skills-title}
+- **Advanced OOP Principles**: Deepen your understanding of object-oriented programming, focusing on advanced concepts in C#  
+- **Good Practices in OOP**: Learn best practices for writing clean, efficient, and maintainable code  
+- **Using Events**: Gain experience working with events in C# and their role in OOP design  
+- **Reflection API**: Understand and use reflection for inspecting and interacting with types and objects at runtime  
+- **Working with Generics**: Master the use of generic types and how they improve code reusability and type safety  
+- **Unit Testing**: Learn how to write unit tests to ensure your code works as expected and maintain code quality over time  
+- **Code Refactoring**: Gain the skills to refactor and improve existing code, making it more efficient and readable  
 
--    Разбиране на парадигмата обектно-ориентирано програмиране в
-    по-напреднал стадий
--    Усвояване на добрите практики на парадигмата
--    Използване на събития
--    Използване на Reflection API
--    Разбиране и използване на Generic типове
--    Умения за тестване на код
-:::
-:::
+## 📅 Course Structure  
 
-::: {.section .instance-trainers-section}
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/57f0dc07-2f58-475e-894f-0227583f94f9){.instance-trainer-info-img}
+The **Advanced OOP** course covers the following core topics:
 
-Явор Вълчев
+1. **Advanced OOP Concepts in C#**  
+   - Learn how to design and implement complex systems using OOP principles  
+   - Understand advanced abstractions and design patterns  
 
-Преподавател
-:::
+2. **Refactoring Bad Code**  
+   - Study techniques for improving and cleaning up poorly written code  
+   - Learn to make code more maintainable and readable without changing its functionality  
 
-Явор има над 10 годишен професионален опит в програмирането, като в
-момента е тиймлийд в Up2 Technology - българо-холандска компания, със
-солидна история в разработката и поддръжката на бизнес приложения.
-Завършил е ФМИ-СУ през 2007 година и се запалва по C# от курсовете на
-Светлин Наков във факултета. Занимава се предимно с back-end services,
-използвайки C# и MS SQL Server. Интересно му е да\... [виж
-още](#){.see-more}[ оптимизира бързодействието на софтуера, който пише
-във фирмата. В свободното си време обича да ходи на планина и да пътува.
-[скрий](#){.see-less}]{style="display:none;"}
+3. **Working with Events**  
+   - Understand the role of events in OOP  
+   - Learn how to create and handle events in C# applications  
 
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/bccd1548-08c4-4bbe-965a-5a412583a75e){.instance-trainer-info-img}
+4. **Reflection API**  
+   - Discover how reflection allows inspection and modification of object types at runtime  
+   - Use reflection to dynamically load assemblies and invoke methods  
 
-Божидар Данчев
+5. **Generics in C#**  
+   - Explore generic types and how they enable reusable and type-safe code  
+   - Work with collections and data structures using generics  
 
-Преподавател
-:::
+6. **Unit Testing**  
+   - Learn how to write effective unit tests to ensure the correctness of your code  
+   - Understand testing frameworks and tools to automate your tests  
 
-Божидар от ранни години има силен интерес към технологиите и
-програмирането, но в гимназията отдава цялото си свободно време на
-професионалния спорт. През 2016 отново се разпалва страстта му и започва
-своето обучение като студент в Софтуерния Университет. Благодарение на
-топ резултати и силното си желание, бива поканен за асистиращ лектор
-през 2017. Интересите му включват смарт технологии, из\... [виж
-още](#){.see-more}[куствен интелект и гейминг.
-[скрий](#){.see-less}]{style="display:none;"}
-:::
-:::
-:::
+7. **Course Project**  
+   - Apply everything you’ve learned by working on a practical course project  
+   - Showcase your understanding of advanced OOP concepts by building a real-world application  
+
+## 🚀 Course Outcome  
+
+Upon completing the **Advanced Object-Oriented Programming** course, students will:
+
+- Be able to apply advanced OOP principles to real-world problems  
+- Understand and implement good coding practices in C#  
+- Be skilled in using reflection, events, and generics to create flexible and reusable code  
+- Have a strong grasp of unit testing and code refactoring  
+- Be prepared to develop high-quality, maintainable software applications  
+- Have hands-on experience building a real-world project using advanced OOP concepts  
+
+---
+
+For further details, visit the [SoftUni C# Program](https://softuni.bg/trainings/1843/csharp-oop-advanced-march-2018).
+
+**🚀 Advance your OOP skills with SoftUni and become a C# expert!**

@@ -1,70 +1,63 @@
-::: {#course-details-container .section}
-::: instance
-#### За курса {#за-курса .course-description-title}
+# 📚 Database Fundamentals Course - SoftUni
 
-<div>
+## 🧑‍🏫 About the Course  
 
-::: {#course-description-wrapper}
-::: {#course-description .course-description .collapsed style="display: block;"}
-Базите данни са стандартният начин за използване на динамична информация
-в съвременните технологии, правейки ги неизменна част от почти всяко
-едно приложение. Интензивният курс по основи на базите данни ще ви
-запознаe с една от най-широко използваните системи за управление на бази
-данни (DBMS), използвани при разработката на съвременни информационни
-системи - Microsoft SQL Server. Курсът обръща сериозно внимание на
-релационния модел, моделирането на данни с ER диаграми (таблици и
-релационни връзки) и работата с езика SQL (извличане на данни, селекция,
-проекция, съединения, агрегация, групиране, промяна, изтриване и
-вмъкване). Предоставят се фундаментални знания за работа с ACID
-транзакции и транзакционна обработка, и практически съвети за
-настройване на производителността. Този курс полага основите на работата
-с бази данни, правейки по-лесно използването им в реални приложения и
-разбирането на концепции като превръщане на база данни в обектно
-ориентиран модел (ORM).
-:::
-:::
+The **Database Fundamentals** course provides a comprehensive introduction to database management and SQL. Participants will gain in-depth knowledge of one of the most widely used Database Management Systems (DBMS), **Microsoft SQL Server**. The course focuses on the relational model, data modeling using ER diagrams, and the essentials of working with SQL (data extraction, selection, projection, joins, aggregation, grouping, modification, deletion, and insertion). Emphasis is placed on **ACID transactions**, transaction processing, and practical performance tuning tips. The course also introduces key concepts like transforming databases into object-oriented models (ORM), making it easier to integrate databases into real-world applications.
 
-</div>
+This course is an essential foundation for anyone aiming to work with databases and understand their role in modern software systems.
 
-::: {.section .instance-skills-section}
-::: {.section .instance-skills}
-## Умения, които ще придобиеш {#умения-които-ще-придобиеш .instance-skills-title}
+## 🛠️ Skills You'll Learn  
 
--    Фундаментални знания за бази данни
--    Управление на трансакции
--    Създаване на базови Back-End архитектури
--    Използване на ACID модела
--    Управление на релации в DB
--    Използване на продецури и функции
-:::
-:::
+- **Fundamentals of Databases**: Learn the core concepts of databases, including relational models and database design principles  
+- **Transaction Management**: Understand how to manage and control transactions within a database using the ACID model  
+- **Back-End Architecture**: Develop foundational skills in creating basic back-end architectures that interact with databases  
+- **ACID Model**: Learn about atomicity, consistency, isolation, and durability in database transactions  
+- **Relational Data Management**: Gain proficiency in working with tables and relational data structures  
+- **Stored Procedures & Functions**: Learn how to use and create stored procedures and functions to interact with the database efficiently  
 
-::: {.section .instance-trainers-section}
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/d87cbf23-c30a-4c01-bc45-853c46971669){.instance-trainer-info-img}
+## 📅 Course Structure  
 
-Борис Костов
+The **Database Fundamentals** course covers the following key areas:
 
-Преподавател
-:::
+1. **Introduction to Databases**  
+   - Understand the importance of databases in modern software applications  
+   - Learn about the types of DBMS and relational databases  
 
-**Борис** завършва специалност \"Системи за управление на бази от
-данни\" в Софийски университет, като съчетава обучението си и с
-програмата на СофтУни. Професионалните му интереси са свързани с езика
- C# и платформата .NET.\
+2. **Relational Model & ER Diagrams**  
+   - Study the relational model of databases, including tables, keys, and relationships  
+   - Learn how to design databases using ER (Entity-Relationship) diagrams  
 
-::: {.section .instance-trainer-info}
-![](/users/profile/showavatar/7fb90cd4-df95-4c73-9d9f-c4bbfe035db1){.instance-trainer-info-img}
+3. **SQL Basics**  
+   - Master basic SQL commands for selecting, inserting, updating, and deleting data  
+   - Understand data projection, joins, grouping, and aggregation  
 
-Стоян Шопов
+4. **Transaction Management & ACID**  
+   - Learn the principles of **ACID** transactions: Atomicity, Consistency, Isolation, Durability  
+   - Work with transaction processing to ensure reliable and secure database operations  
 
-Преподавател
-:::
+5. **Database Performance Optimization**  
+   - Explore techniques for optimizing database performance, including indexing and query tuning  
 
-**Стоян** е топ студент в СофтУни. Има професионален опит в софтуерната
-разработка със C#. Изучава усилено C# програмата, а в свободното си
-време обича да се занимава с бизнес и личностно развитие. В свободното
-си време обича да бъде сред планината.
-:::
-:::
-:::
+6. **Stored Procedures & Functions**  
+   - Learn to create and manage stored procedures and functions to perform operations in SQL Server  
+
+7. **Object-Relational Mapping (ORM)**  
+   - Understand how to transform a relational database into an object-oriented model for use in applications  
+
+## 🚀 Course Outcome  
+
+Upon completion of the **Database Fundamentals** course, students will:
+
+- Have a strong understanding of database fundamentals and relational models  
+- Be capable of managing transactions and optimizing database performance  
+- Be proficient in using SQL for data manipulation and management  
+- Be able to design and implement databases using ER diagrams  
+- Be equipped to create back-end systems that utilize databases efficiently  
+- Have practical experience with stored procedures and functions  
+- Be ready to integrate databases with real-world applications using ORM  
+
+---
+
+For further details, visit the [SoftUni Database Program](https://softuni.bg/trainings/1985/database-basics-mssql-may-2018).
+
+**🚀 Start your database journey with SoftUni and build the foundation for success in back-end development!**
